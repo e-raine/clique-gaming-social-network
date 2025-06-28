@@ -18,6 +18,38 @@ Where gamers find what they care about. No more sifting through endless forums o
 
 ## 🚀 Key Features
 
+### 🎯 Core Functionality
+- **Multi-Feed System**
+  - Global tag-based discovery feed
+  - Personalized following feed
+- **Tag-Centric Organization**
+  - Mandatory post tagging
+  - User-customizable tag following
+
+### 🏷 Content Structure
+- **Categorized Content**
+  - Game-specific tags (e.g., `#Valorant`, `#Minecraft`)
+  - Activity-type tags (e.g., `#LFG`, `#Clips`)
+- **User Portfolios**
+  - Linked gaming profiles (Steam/Xbox/PSN)
+  - Activity history and achievements
+
+### 🌟 Community Elements
+- **Reputation System**
+  - User ratings and feedback
+  - Skill/contribution badges
+- **Direct Interaction**
+  - Peer-to-peer messaging
+  - No algorithmic interference
+
+### 📍 Community Focus
+- **Localized Groups**
+  - Region-specific channels
+  - Local tournament support
+- **Verified Presence**
+  - Streamer/influencer verification
+  - Guild certification display
+
 ## 🛠️ Tech Stack
 
 ## 👦 Core Development Team
