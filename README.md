@@ -4,17 +4,22 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
 
-# Table of Contents
+## Table of Contents
 * [🌟About](#-about)
 * [🚀Key Features](#-key-features)
 * [🛠️Tech Stack](#-tech-stack)
 * [👦Core Development Team](#-core-development-team)
 * [💻Getting Started](#-getting-started)
 
+## 🌟 About
 
+## 🚀 Key Features
 
+## 🛠️ Tech Stack
 
-# Getting Started
+## 👦 Core Development Team
+
+## Getting Started
 
 First, run the development server:
 
