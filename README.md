@@ -1,13 +1,16 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Table of Contents {#table_of_contents}
-- [Table of contents](#-table-of-contents)
-- [Description](#-description)
+[![AWS Deployment](https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+# Table of Contents
+- [About](#)
 - [Getting Started](#-getting-started)
 
 
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
