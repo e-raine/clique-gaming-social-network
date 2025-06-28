@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Table of Contents {#table_of_contents}
+# Table of Contents
 * [Table of contents](#table_of_contents)
 * [Description](#description)
 
