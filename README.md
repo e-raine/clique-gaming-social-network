@@ -12,6 +12,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 * [💻Getting Started](#-getting-started)
 
 ## 🌟 About
+Your Hub for Gaming—Curated, Connected, Competitive
+
+Where gamers find what they care about. No more sifting through endless forums or chaotic Discord servers. We blend the best of social feeds, guilds, and tournaments into one personalized platform—starting with the content you love and evolving into the communities you lead.
 
 ## 🚀 Key Features
 
