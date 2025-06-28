@@ -5,8 +5,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
 
 # Table of Contents
-- [About](#)
-- [Getting Started](#-getting-started)
+- [🌟About](#-about)
+- [🚀Key Features](#-key-features)
+- [🛠️Tech Stack](#-tech-stack)
+    -[Frontend](#frontend)
+    -[Backend](#backend)
+-[👦Core Development Team](#-core-development-team)
+-[💻Getting Started](#-getting-started)
+
 
 
 
