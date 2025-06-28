@@ -56,7 +56,7 @@ Where gamers find what they care about. No more sifting through endless forums o
 
 | Role               | Name                      | GitHub Profile                                     |
 |--------------------|---------------------------|----------------------------------------------------|
-| **Tech Lead**      | Eve Loraine M. Nuñal      | ![Octocat](https://github.githubassets.com/images/modules/logos_page/Octocat.png){ width="50"} [@e-raine](https://github.com/e-raine)             |
+| **Tech Lead**      | Eve Loraine M. Nuñal      | [@e-raine](https://github.com/e-raine)             |
 | **UI/UX Designer** | Anna Faye M. Saulon       | [@Krarneas](https://github.com/Krarneas)           |
 | **Frontend Dev**   | Michael James B. Mangaron | [@Mykelw21](https://github.com/Mykelw21)           |
 | **Backend Dev**    | John Rey G. Solon         | [@sohcahtoa0909](https://github.com/sohcahtoa0909) |
