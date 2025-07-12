@@ -1,12 +1,12 @@
 {
-  "name": "marketplace",
+  "name": "clique",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "cd frontend && next dev --turbopack",
+    "build": "cd frontend && next build",
+    "start": "cd frontend && next start",
+    "lint": "cd frontend && next lint"
   },
   "dependencies": {
     "react": "^19.0.0",
