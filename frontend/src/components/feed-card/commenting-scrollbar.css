@@ -1,0 +1,31 @@
+/* Custom scrollbar for the comment dialog */
+
+/* Applies custom scrollbar styles to elements with this class */
+.comment-dialog-scrollbar {
+    /* Sets scrollbar thumb color and track color for Firefox */
+    scrollbar-width: thumb;
+    scrollbar-color: #888 transparent;
+}
+
+/* Styles the scrollbar itself for WebKit browsers (Chrome, Edge, Safari) */
+.comment-dialog-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Sets scrollbar width */
+    background: transparent; /* Makes scrollbar background transparent */
+}
+
+/* Styles the draggable part of the scrollbar (the thumb) */
+.comment-dialog-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+    border-radius: 4px; /* Rounded corners for thumb */
+}
+
+/* Changes thumb color on hover for better interactivity */
+.comment-dialog-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker thumb on hover */
+}
+
+/* Styles the scrollbar track (the area the thumb moves along) */
+.comment-dialog-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track */
+    border-radius: 4px; /* Rounded corners for track */
+}
