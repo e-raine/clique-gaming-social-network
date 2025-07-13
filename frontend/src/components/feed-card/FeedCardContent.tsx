@@ -12,29 +12,29 @@
 
 import Image from "next/image";
 
-interface Props {
+type FeedCardContentProps = {
 	type: "single-image" | "grid-images" | "text";
 	images?: string[];
 	textContent?: string;
-}
+};
 
 export function FeedCardContent({
 	type,
 	images = [],
 	textContent = "",
-}: Props) {
+}: FeedCardContentProps) {
 	if (type === "single-image") {
 		//if type is just a single image
 		if (!images[0]) {
 			return null;
 		}
 		return (
-			<Image 
+			<Image
 				width={400}
 				height={400}
 				src={images[0]}
-				alt={`Image ${ + 1}`}
-						className="w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground"
+				alt={`Image ${+1}`}
+				className="w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground"
 			/>
 		);
 	}
@@ -62,7 +62,8 @@ export function FeedCardContent({
 		);
 	}
 
-	return ( //if type is just paragraph
+	return (
+		//if type is just paragraph
 		<p className="leading-relaxed text-left text-sm text-foreground whitespace-pre-wrap">
 			{textContent}
 		</p>

@@ -64,9 +64,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
-    --container-md: 28rem;
     --container-lg: 32rem;
-    --container-3xl: 48rem;
     --text-xs: .75rem;
     --text-xs--line-height: calc(1 / .75);
     --text-sm: .875rem;
@@ -337,8 +335,12 @@
     top: 50%;
   }
 
-  .right-4 {
-    right: calc(var(--spacing) * 4);
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
+
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
   }
 
   .left-\[50\%\] {
@@ -403,10 +405,6 @@
     }
   }
 
-  .mx-auto {
-    margin-inline: auto;
-  }
-
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -419,24 +417,12 @@
     margin-top: calc(var(--spacing) * 3);
   }
 
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
-
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
 
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
-  }
-
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
-  }
-
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
   }
 
   .ml-6 {
@@ -494,12 +480,8 @@
     height: calc(var(--spacing) * 10);
   }
 
-  .h-\[700px\] {
-    height: 700px;
-  }
-
-  .max-h-\[90vh\] {
-    max-height: 90vh;
+  .h-\[752px\] {
+    height: 752px;
   }
 
   .min-h-screen {
@@ -522,10 +504,6 @@
     width: 100%;
   }
 
-  .max-w-3xl {
-    max-width: var(--container-3xl);
-  }
-
   .max-w-\[calc\(100\%-2rem\)\] {
     max-width: calc(100% - 2rem);
   }
@@ -542,7 +520,7 @@
     flex: 1;
   }
 
-  .shrink-0 {
+  .flex-shrink-0, .shrink-0 {
     flex-shrink: 0;
   }
 
@@ -693,11 +671,6 @@
     border-width: 1px;
   }
 
-  .border-b {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
-
   .border-solid {
     --tw-border-style: solid;
     border-style: solid;
@@ -785,8 +758,8 @@
     object-fit: cover;
   }
 
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
 
   .p-6 {
@@ -795,10 +768,6 @@
 
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-
-  .px-0 {
-    padding-inline: calc(var(--spacing) * 0);
   }
 
   .px-1 {
@@ -811,6 +780,10 @@
 
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
 
   .px-6 {
@@ -837,28 +810,16 @@
     padding-block: calc(var(--spacing) * 6);
   }
 
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
-  }
-
-  .pt-4 {
-    padding-top: calc(var(--spacing) * 4);
-  }
-
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
-  }
-
-  .pb-4 {
-    padding-bottom: calc(var(--spacing) * 4);
-  }
-
-  .pb-8 {
-    padding-bottom: calc(var(--spacing) * 8);
+  .pr-0 {
+    padding-right: calc(var(--spacing) * 0);
   }
 
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
+  }
+
+  .pl-0 {
+    padding-left: calc(var(--spacing) * 0);
   }
 
   .text-center {
@@ -1370,8 +1331,8 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:min-w-md {
-      min-width: var(--container-md);
+    .sm\:min-w-\[500px\] {
+      min-width: 500px;
     }
   }
 
@@ -1425,8 +1386,8 @@
   }
 
   @media (width >= 48rem) {
-    .md\:min-w-lg {
-      min-width: var(--container-lg);
+    .md\:min-w-\[600px\] {
+      min-width: 600px;
     }
   }
 
@@ -1553,6 +1514,11 @@
   .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-4 svg:not([class*="size-"]) {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
+  }
+
+  .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-5 svg:not([class*="size-"]) {
+    width: calc(var(--spacing) * 5);
+    height: calc(var(--spacing) * 5);
   }
 
   .\[\.border-b\]\:pb-6.border-b {

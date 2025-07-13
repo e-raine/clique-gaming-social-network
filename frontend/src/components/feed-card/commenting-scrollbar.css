@@ -28,4 +28,5 @@
 .comment-dialog-scrollbar::-webkit-scrollbar-track {
     background: transparent; /* Transparent track */
     border-radius: 4px; /* Rounded corners for track */
+    
 }

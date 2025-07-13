@@ -3,7 +3,6 @@ import "./commenting-scrollbar.css";
 import {
 	Dialog,
 	DialogContent,
-	DialogDescription,
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
@@ -11,8 +10,9 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Heart } from "lucide-react";
+import { Heart, SendHorizonal } from "lucide-react";
 import Image from "next/image";
+import { Card } from "../ui/card";
 
 type Comment = {
 	id: number;
@@ -156,7 +156,8 @@ const Commenting = ({
 			>
 				<div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-xs font-bold">
 					{comment.user.avatarUrl ? (
-						<Image						src={comment.user.avatarUrl}
+						<Image
+							src={comment.user.avatarUrl}
 							alt={comment.user.name}
 							className="w-8 h-8 rounded-full"
 						/>
@@ -168,7 +169,7 @@ const Commenting = ({
 					<div className="flex items-center gap-2">
 						<span className="font-medium text-xs">{comment.user.name}</span>
 						<span className="text-xs text-muted-foreground">
-							{comment.date.toLocaleString()}
+							{comment.date.toLocaleString('en-US', { hour: '2-digit', minute: '2-digit' })}
 						</span>
 					</div>
 					<div className="text-sm mb-1">{comment.text}</div>
@@ -232,23 +233,33 @@ const Commenting = ({
 		<Dialog>
 			<DialogTrigger asChild>{trigger}</DialogTrigger>
 
-			<DialogContent className="h-[700px] max-h-[90vh] max-w-3xl p-4 mx-auto mt-8 mb-8">
-				<div className="sticky top-0 bg-background px-10 pt-8 pb-4 rounded-xl border-b">
+			<DialogContent className="h-[752px] w-full min-w-[300px] sm:min-w-[500px] md:min-w-[600px] flex flex-col pr-0 pl-0  ">
+				<div className="sticky top-0 bg-background px-10 mtpb-2 rounded-xl  flex-shrink-0">
 					<DialogTitle className="text-center font-semibold leading-1 mb-2">
-						{author}`&apos;`s Post
+						{author}&apos;s Post
 					</DialogTitle>
 				</div>
-				<div className="overflow-y-auto comment-dialog-scrollbar comment-dialog-scrollable-content px-10 pb-8 pt-4">
-					<div className="mb-4">
+				<div className="overflow-y-auto comment-dialog-scrollbar comment-dialog-scrollable-content">
+					<Card >
 						{cardInner}
 						{cardFooter}
-					</div>
+					</Card>
+					
 					{/* Comment input and list */}
-					<DialogHeader className="px-0">
+					<DialogHeader className="px-5">
 						<div>
 							<div className="flex flex-col gap-3 mt-2">
+								<div className="flex flex-col gap-2 mt-1">
+									{comments.length === 0 && (
+										<span className="text-xs text-muted-foreground">
+											No comments yet.
+										</span>
+									)}
+									{comments.map((c) => renderComment(c))}
+								</div>
+
 								<form
-									className="flex gap-3"
+									className="sticky bottom-0 flex gap-3 bg-background p-2"
 									onSubmit={(e) => {
 										e.preventDefault();
 										handlePost();
@@ -260,17 +271,10 @@ const Commenting = ({
 										placeholder="Add a comment..."
 									/>
 									<Button type="submit" disabled={!input.trim()} size="sm">
-										Post
+										<SendHorizonal size={8}/>
 									</Button>
 								</form>
-								<div className="flex flex-col gap-2 mt-1">
-									{comments.length === 0 && (
-										<span className="text-xs text-muted-foreground">
-											No comments yet.
-										</span>
-									)}
-									{comments.map((c) => renderComment(c))}
-								</div>
+								
 							</div>
 						</div>
 					</DialogHeader>
