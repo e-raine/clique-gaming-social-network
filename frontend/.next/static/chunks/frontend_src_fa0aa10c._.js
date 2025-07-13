@@ -441,6 +441,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$component
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/input.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript) <export default as Heart>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizonal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/send-horizontal.js [app-client] (ecmascript) <export default as SendHorizonal>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/card.tsx [app-client] (ecmascript)");
 ;
@@ -588,9 +589,9 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-xs text-muted-foreground",
-                                    children: comment.date.toLocaleString('en-US', {
-                                        hour: '2-digit',
-                                        minute: '2-digit'
+                                    children: comment.date.toLocaleString("en-US", {
+                                        hour: "2-digit",
+                                        minute: "2-digit"
                                     })
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
@@ -608,7 +609,7 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                             children: comment.text
                         }, void 0, false, {
                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                            lineNumber: 175,
+                            lineNumber: 178,
                             columnNumber: 6
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -623,7 +624,7 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                             className: "h-3 w-3"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                            lineNumber: 184,
+                                            lineNumber: 187,
                                             columnNumber: 8
                                         }, this),
                                         " ",
@@ -631,7 +632,7 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                    lineNumber: 177,
+                                    lineNumber: 180,
                                     columnNumber: 7
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -641,13 +642,13 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                     children: "Reply"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                    lineNumber: 186,
+                                    lineNumber: 189,
                                     columnNumber: 7
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                            lineNumber: 176,
+                            lineNumber: 179,
                             columnNumber: 6
                         }, this),
                         replyTo === comment.id && !isReply && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -661,20 +662,24 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                     value: replyInput,
                                     onChange: (e)=>setReplyInput(e.target.value),
                                     placeholder: "Write a reply...",
-                                    className: "text-xs"
+                                    className: "flex-1 text-xs"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 205,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                     type: "submit",
                                     size: "sm",
                                     disabled: !replyInput.trim(),
-                                    children: "Post"
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizonal$3e$__["SendHorizonal"], {}, void 0, false, {
+                                        fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
+                                        lineNumber: 212,
+                                        columnNumber: 9
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                    lineNumber: 208,
+                                    lineNumber: 211,
                                     columnNumber: 8
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -682,16 +687,20 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                     size: "sm",
                                     variant: "ghost",
                                     onClick: ()=>setReplyTo(null),
-                                    children: "Cancel"
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
+                                        fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
+                                        lineNumber: 220,
+                                        columnNumber: 9
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                    lineNumber: 211,
+                                    lineNumber: 214,
                                     columnNumber: 8
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                            lineNumber: 195,
+                            lineNumber: 198,
                             columnNumber: 7
                         }, this),
                         comment.replies.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -699,7 +708,7 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                             children: comment.replies.map((r)=>renderComment(r, true, comment.id))
                         }, void 0, false, {
                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                            lineNumber: 223,
+                            lineNumber: 226,
                             columnNumber: 7
                         }, this)
                     ]
@@ -722,7 +731,7 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                 children: trigger
             }, void 0, false, {
                 fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                lineNumber: 234,
+                lineNumber: 237,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
@@ -738,32 +747,33 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                            lineNumber: 238,
+                            lineNumber: 241,
                             columnNumber: 6
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                        lineNumber: 237,
+                        lineNumber: 240,
                         columnNumber: 5
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "overflow-y-auto comment-dialog-scrollbar comment-dialog-scrollable-content",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "mt-2",
                                 children: [
                                     cardInner,
                                     cardFooter
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                lineNumber: 243,
+                                lineNumber: 246,
                                 columnNumber: 6
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
                                 className: "px-5",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-col gap-3 mt-2",
+                                        className: "flex flex-col gap-3 mt-2 pb-20",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex flex-col gap-2 mt-1",
@@ -773,86 +783,85 @@ const Commenting = ({ trigger, cardInner, cardFooter, author })=>{
                                                         children: "No comments yet."
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                                        lineNumber: 254,
+                                                        lineNumber: 257,
                                                         columnNumber: 11
                                                     }, this),
                                                     comments.map((c)=>renderComment(c))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                                lineNumber: 252,
+                                                lineNumber: 255,
                                                 columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                                                className: "sticky bottom-0 flex gap-3 bg-background p-2",
+                                                className: "absolute bottom-0 left-5 right-5 flex gap-3 bg-background pt-4 pb-4",
                                                 onSubmit: (e)=>{
                                                     e.preventDefault();
                                                     handlePost();
                                                 },
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        className: "flex-1",
                                                         value: input,
                                                         onChange: (e)=>setInput(e.target.value),
                                                         placeholder: "Add a comment..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                                        lineNumber: 268,
+                                                        lineNumber: 271,
                                                         columnNumber: 10
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                                         type: "submit",
                                                         disabled: !input.trim(),
                                                         size: "sm",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizonal$3e$__["SendHorizonal"], {
-                                                            size: 8
-                                                        }, void 0, false, {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SendHorizonal$3e$__["SendHorizonal"], {}, void 0, false, {
                                                             fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                                            lineNumber: 274,
+                                                            lineNumber: 278,
                                                             columnNumber: 11
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                                        lineNumber: 273,
+                                                        lineNumber: 277,
                                                         columnNumber: 10
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                                lineNumber: 261,
+                                                lineNumber: 264,
                                                 columnNumber: 9
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                        lineNumber: 251,
+                                        lineNumber: 254,
                                         columnNumber: 8
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                    lineNumber: 250,
+                                    lineNumber: 253,
                                     columnNumber: 7
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                                lineNumber: 249,
+                                lineNumber: 252,
                                 columnNumber: 6
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                        lineNumber: 242,
+                        lineNumber: 245,
                         columnNumber: 5
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-                lineNumber: 236,
+                lineNumber: 239,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/src/components/feed-card/Commenting.tsx",
-        lineNumber: 233,
+        lineNumber: 236,
         columnNumber: 3
     }, this);
 };
@@ -959,7 +968,7 @@ function FeedCardContent({ type, images = [], textContent = "" }) {
             height: 400,
             src: images[0],
             alt: `Image ${+1}`,
-            className: "w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground"
+            className: "w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground border-accent-2"
         }, void 0, false, {
             fileName: "[project]/frontend/src/components/feed-card/FeedCardContent.tsx",
             lineNumber: 32,
@@ -1049,6 +1058,7 @@ const FeedCardInner = ({ author, avatarUrl, date, game, postTitle, type, images,
                         className: "flex text-left gap-3 items-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Avatar"], {
+                                className: "size-15",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AvatarImage"], {
                                         src: avatarUrl || undefined,
@@ -1217,13 +1227,13 @@ const FeedCardFooter = ({ likeCount, liked, handleLike, commentCount, onCommentC
                     "aria-label": liked ? "Unlike" : "Like",
                     children: [
                         liked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                            className: "h-4 w-4 fill-red-500 "
+                            className: "h-6 w-6 fill-red-500 "
                         }, void 0, false, {
                             fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
                             lineNumber: 51,
                             columnNumber: 7
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                            className: "h-4 w-4"
+                            className: "h-6 w-6"
                         }, void 0, false, {
                             fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
                             lineNumber: 53,
@@ -1251,7 +1261,7 @@ const FeedCardFooter = ({ likeCount, liked, handleLike, commentCount, onCommentC
                         type: "button",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
-                                className: "h-4 w-4"
+                                className: "h-6 w-6"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
                                 lineNumber: 67,
@@ -1296,13 +1306,13 @@ const FeedCardFooter = ({ likeCount, liked, handleLike, commentCount, onCommentC
                                     type: "button",
                                     children: [
                                         liked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                            className: "h-4 w-4 fill-red-500 "
+                                            className: "h-5 w-5 fill-red-500 "
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
                                             lineNumber: 93,
                                             columnNumber: 11
                                         }, void 0) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                            className: "h-4 w-4"
+                                            className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
                                             lineNumber: 95,
@@ -1328,7 +1338,7 @@ const FeedCardFooter = ({ likeCount, liked, handleLike, commentCount, onCommentC
                                     type: "button",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
-                                            className: "h-4 w-4"
+                                            className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
                                             lineNumber: 105,

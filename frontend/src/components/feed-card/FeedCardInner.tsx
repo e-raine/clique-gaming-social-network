@@ -34,7 +34,7 @@ const FeedCardInner: React.FC<FeedCardInnerProps> = ({
 		<CardHeader className="flex justify-between items-start px-6 py-2">
 			{/* Left Section */}
 				<div className="flex text-left gap-3 items-center">
-					<Avatar>
+					<Avatar className="size-15">
 						<AvatarImage src={avatarUrl || undefined} alt={author} />
 
 						{/* If undefined it will show a character based on the username */}

@@ -34,7 +34,7 @@ export function FeedCardContent({
 				height={400}
 				src={images[0]}
 				alt={`Image ${+1}`}
-				className="w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground"
+				className="w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground border-accent-2"
 			/>
 		);
 	}

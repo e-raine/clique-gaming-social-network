@@ -10,7 +10,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Heart, SendHorizonal } from "lucide-react";
+import { Heart, SendHorizonal, X} from "lucide-react";
 import Image from "next/image";
 import { Card } from "../ui/card";
 
@@ -169,7 +169,10 @@ const Commenting = ({
 					<div className="flex items-center gap-2">
 						<span className="font-medium text-xs">{comment.user.name}</span>
 						<span className="text-xs text-muted-foreground">
-							{comment.date.toLocaleString('en-US', { hour: '2-digit', minute: '2-digit' })}
+							{comment.date.toLocaleString("en-US", {
+								hour: "2-digit",
+								minute: "2-digit",
+							})}
 						</span>
 					</div>
 					<div className="text-sm mb-1">{comment.text}</div>
@@ -203,10 +206,10 @@ const Commenting = ({
 								value={replyInput}
 								onChange={(e) => setReplyInput(e.target.value)}
 								placeholder="Write a reply..."
-								className="text-xs"
+								className="flex-1 text-xs"
 							/>
 							<Button type="submit" size="sm" disabled={!replyInput.trim()}>
-								Post
+								<SendHorizonal />
 							</Button>
 							<Button
 								type="button"
@@ -214,7 +217,7 @@ const Commenting = ({
 								variant="ghost"
 								onClick={() => setReplyTo(null)}
 							>
-								Cancel
+								<X/>
 							</Button>
 						</form>
 					)}
@@ -240,15 +243,15 @@ const Commenting = ({
 					</DialogTitle>
 				</div>
 				<div className="overflow-y-auto comment-dialog-scrollbar comment-dialog-scrollable-content">
-					<Card >
+					<Card className="mt-2">
 						{cardInner}
 						{cardFooter}
 					</Card>
-					
+
 					{/* Comment input and list */}
 					<DialogHeader className="px-5">
 						<div>
-							<div className="flex flex-col gap-3 mt-2">
+							<div className="flex flex-col gap-3 mt-2 pb-20">
 								<div className="flex flex-col gap-2 mt-1">
 									{comments.length === 0 && (
 										<span className="text-xs text-muted-foreground">
@@ -259,22 +262,22 @@ const Commenting = ({
 								</div>
 
 								<form
-									className="sticky bottom-0 flex gap-3 bg-background p-2"
+									className="absolute bottom-0 left-5 right-5 flex gap-3 bg-background pt-4 pb-4"
 									onSubmit={(e) => {
 										e.preventDefault();
 										handlePost();
 									}}
 								>
 									<Input
+										className="flex-1"
 										value={input}
 										onChange={(e) => setInput(e.target.value)}
 										placeholder="Add a comment..."
 									/>
 									<Button type="submit" disabled={!input.trim()} size="sm">
-										<SendHorizonal size={8}/>
+										<SendHorizonal />
 									</Button>
 								</form>
-								
 							</div>
 						</div>
 					</DialogHeader>
