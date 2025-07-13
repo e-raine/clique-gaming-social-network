@@ -48,7 +48,7 @@ export const FeedCardFooter: React.FC<FeedCardFooterProps> = ({
 					aria-label={liked ? "Unlike" : "Like"}
 				>
 					{liked ? (
-						<Heart className="h-6 w-6 fill-red-500 " />
+						<Heart className="h-6 w-6 fill-red-500 text-red-500" />
 					) : (
 						<Heart className="h-6 w-6" />
 					)}
@@ -90,7 +90,7 @@ export const FeedCardFooter: React.FC<FeedCardFooterProps> = ({
 									type="button"
 								>
 									{liked ? (
-										<Heart className="h-5 w-5 fill-red-500 " />
+										<Heart className="h-5 w-5 fill-red-500 text-red-500" />
 									) : (
 										<Heart className="h-5 w-5" />
 									)}

@@ -184,7 +184,7 @@ const Commenting = ({
 							onClick={() => handleLike(comment.id, isReply, parentId)}
 							type="button"
 						>
-							<Heart className="h-3 w-3" /> {comment.likes}
+							<Heart className={`h-3 w-3 ${comment.liked ? "fill-red-500 text-red-500" : ""}`} /> {comment.likes}
 						</button>
 						<button
 							className="hover:text-primary transition"

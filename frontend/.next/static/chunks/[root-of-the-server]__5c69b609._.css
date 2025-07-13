@@ -154,6 +154,7 @@
 
 @layer theme {
   :root, :host {
+    --color-red-100: oklch(93.6% .032 17.717);
     --color-red-500: oklch(63.7% .237 25.331);
     --color-black: #000;
     --color-white: #fff;
@@ -949,6 +950,10 @@
 
   .bg-transparent {
     background-color: #0000;
+  }
+
+  .fill-red-100 {
+    fill: var(--color-red-100);
   }
 
   .fill-red-500 {
