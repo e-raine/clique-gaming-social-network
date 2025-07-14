@@ -1,6 +1,8 @@
+
+
 import { Card } from "@/components/ui/card";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 import { FeedCardFooter } from "./FeedCardFooter";
 import FeedCardInner from "./FeedCardInner";
@@ -21,8 +23,6 @@ export interface FeedCardProps {
   onLike?: () => void;
   onComment?: () => void;
 }
-
-
 
 export function FeedCard({
 	type,
@@ -50,34 +50,31 @@ export function FeedCard({
 	//Commenting
 	const commentCount = 0; // TODO: Replace with real comment count if available
 
+	const cardInnerContent = useMemo( () => (
+		<FeedCardInner 
+			author={author}
+			avatarUrl={avatarUrl}
+			date={date}
+			game={game}
+			postTitle={postTitle}
+			type={type as "single-image" | "grid-images" | "text"}
+			images={images}
+			textContent={textContent}
+		/>
+	), [author, avatarUrl, date, game, postTitle, type, images, textContent]);
+
 	return (
 		<Card className="w-full min-w-[300px] sm:min-w-[500px] md:min-w-[600px]">
-			<FeedCardInner
-				author={author}
-				avatarUrl={avatarUrl}
-				date={date}
-				game={game}
-				postTitle={postTitle}
-				type={type as "single-image" | "grid-images" | "text"}
-				images={images}
-				textContent={textContent}
-			/>
-
+			
+			{cardInnerContent}
 			<FeedCardFooter
 				likeCount={likeCount}
 				liked={liked}
 				handleLike={handleLike}
 				commentCount={commentCount}
-				onCommentClick={() => {}}
 				commentButtonDisabled={false}
+				cardInnerContent={cardInnerContent}
 				author={author}
-				avatarUrl={avatarUrl}
-				date={date instanceof Date ? date.toISOString() : date}
-				game={game}
-				postTitle={postTitle}
-				type={type}
-				images={images}
-				textContent={textContent}
 			/>
 		</Card>
 	);

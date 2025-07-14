@@ -1196,206 +1196,15 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/frontend/src/components/feed-card/FeedCardFooter.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/frontend/src/components/feed-card/FeedCardFooter.tsx [app-client] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+var { g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports } = __turbopack_context__;
 {
-__turbopack_context__.s({
-    "FeedCardFooter": (()=>FeedCardFooter)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/card.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-client] (ecmascript) <export default as Heart>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-circle.js [app-client] (ecmascript) <export default as MessageCircle>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$Commenting$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/Commenting.tsx [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardInner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/FeedCardInner.tsx [app-client] (ecmascript)");
-;
-;
-;
-;
-;
-const FeedCardFooter = ({ likeCount, liked, handleLike, commentCount, onCommentClick, commentButtonDisabled, author, avatarUrl, date, game, postTitle, type, images, textContent })=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardFooter"], {
-        className: "flex justify-between items-center px-6 py-2 text-sm text-muted-foreground",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex items-center gap-4 ",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "flex items-center gap-1 hover:text-primary transition",
-                    onClick: handleLike,
-                    "aria-label": liked ? "Unlike" : "Like",
-                    children: [
-                        liked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                            className: "h-6 w-6 fill-red-500 text-red-500"
-                        }, void 0, false, {
-                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                            lineNumber: 51,
-                            columnNumber: 7
-                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                            className: "h-6 w-6"
-                        }, void 0, false, {
-                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                            lineNumber: 53,
-                            columnNumber: 7
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            children: likeCount
-                        }, void 0, false, {
-                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                            lineNumber: 55,
-                            columnNumber: 6
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                    lineNumber: 45,
-                    columnNumber: 5
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$Commenting$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    trigger: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "flex items-center gap-1 hover:text-primary transition",
-                        onClick: onCommentClick,
-                        "aria-label": "Comment",
-                        disabled: commentButtonDisabled,
-                        type: "button",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
-                                className: "h-6 w-6"
-                            }, void 0, false, {
-                                fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                lineNumber: 67,
-                                columnNumber: 8
-                            }, void 0),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: commentCount
-                            }, void 0, false, {
-                                fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                lineNumber: 68,
-                                columnNumber: 8
-                            }, void 0)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                        lineNumber: 60,
-                        columnNumber: 7
-                    }, void 0),
-                    cardInner: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardInner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        author: author,
-                        avatarUrl: avatarUrl,
-                        date: typeof date === "string" ? new Date(date) : date,
-                        game: game,
-                        postTitle: postTitle,
-                        type: type,
-                        images: images,
-                        textContent: textContent
-                    }, void 0, false, {
-                        fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                        lineNumber: 72,
-                        columnNumber: 7
-                    }, void 0),
-                    cardFooter: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardFooter"], {
-                        className: "flex  items-center px-6 py-2 text-sm text-muted-foreground",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex items-center gap-4",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "flex items-center gap-1 hover:text-primary transition",
-                                    "aria-label": liked ? "Unlike" : "Like",
-                                    onClick: handleLike,
-                                    type: "button",
-                                    children: [
-                                        liked ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                            className: "h-5 w-5 fill-red-500 text-red-500"
-                                        }, void 0, false, {
-                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                            lineNumber: 93,
-                                            columnNumber: 11
-                                        }, void 0) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__["Heart"], {
-                                            className: "h-5 w-5"
-                                        }, void 0, false, {
-                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                            lineNumber: 95,
-                                            columnNumber: 11
-                                        }, void 0),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: likeCount
-                                        }, void 0, false, {
-                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                            lineNumber: 97,
-                                            columnNumber: 10
-                                        }, void 0)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                    lineNumber: 86,
-                                    columnNumber: 9
-                                }, void 0),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "flex items-center gap-1 hover:text-primary transition",
-                                    "aria-label": "Comment",
-                                    disabled: true,
-                                    type: "button",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
-                                            className: "h-5 w-5"
-                                        }, void 0, false, {
-                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                            lineNumber: 105,
-                                            columnNumber: 10
-                                        }, void 0),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: commentCount
-                                        }, void 0, false, {
-                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                            lineNumber: 106,
-                                            columnNumber: 10
-                                        }, void 0)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                                    lineNumber: 99,
-                                    columnNumber: 9
-                                }, void 0)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                            lineNumber: 85,
-                            columnNumber: 8
-                        }, void 0)
-                    }, void 0, false, {
-                        fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                        lineNumber: 84,
-                        columnNumber: 7
-                    }, void 0),
-                    author: author,
-                    likeCount: likeCount,
-                    liked: liked,
-                    onLike: handleLike
-                }, void 0, false, {
-                    fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-                    lineNumber: 58,
-                    columnNumber: 5
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-            lineNumber: 43,
-            columnNumber: 4
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/frontend/src/components/feed-card/FeedCardFooter.tsx",
-        lineNumber: 42,
-        columnNumber: 3
-    }, this);
-};
-_c = FeedCardFooter;
-var _c;
-__turbopack_context__.k.register(_c, "FeedCardFooter");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
+const e = new Error(`Could not parse module '[project]/frontend/src/components/feed-card/FeedCardFooter.tsx'
+
+Unexpected token `CardFooter`. Expected jsx identifier`);
+e.code = 'MODULE_UNPARSEABLE';
+throw e;}}),
 "[project]/frontend/src/components/feed-card/FeedCard.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1430,47 +1239,40 @@ function FeedCard({ type, images = [], textContent = "", author, avatarUrl, date
     };
     //Commenting
     const commentCount = 0; // TODO: Replace with real comment count if available
+    const cardInnerContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardInner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        author: author,
+        avatarUrl: avatarUrl,
+        date: date,
+        game: game,
+        postTitle: postTitle,
+        type: type,
+        images: images,
+        textContent: textContent
+    }, void 0, false, {
+        fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
+        lineNumber: 54,
+        columnNumber: 3
+    }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
         className: "w-full min-w-[300px] sm:min-w-[500px] md:min-w-[600px]",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardInner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                author: author,
-                avatarUrl: avatarUrl,
-                date: date,
-                game: game,
-                postTitle: postTitle,
-                type: type,
-                images: images,
-                textContent: textContent
-            }, void 0, false, {
-                fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-                lineNumber: 55,
-                columnNumber: 4
-            }, this),
+            cardInnerContent,
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardFooter$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FeedCardFooter"], {
                 likeCount: likeCount,
                 liked: liked,
                 handleLike: handleLike,
                 commentCount: commentCount,
-                onCommentClick: ()=>{},
                 commentButtonDisabled: false,
-                author: author,
-                avatarUrl: avatarUrl,
-                date: date instanceof Date ? date.toISOString() : date,
-                game: game,
-                postTitle: postTitle,
-                type: type,
-                images: images,
-                textContent: textContent
+                cardInnerContent: cardInnerContent
             }, void 0, false, {
                 fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-                lineNumber: 66,
+                lineNumber: 74,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-        lineNumber: 54,
+        lineNumber: 70,
         columnNumber: 3
     }, this);
 }

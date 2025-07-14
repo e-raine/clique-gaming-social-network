@@ -1,0 +1,14 @@
+/* [project]/frontend/src/components/comment-system/comment.css [app-client] (css) */
+.comment-container {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 12px;
+}
+
+.comment-container > * {
+  all: initial;
+}
+
+/*# sourceMappingURL=frontend_src_components_comment-system_comment_css_f9ee138c._.single.css.map*/

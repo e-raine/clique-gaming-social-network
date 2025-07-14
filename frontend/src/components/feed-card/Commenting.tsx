@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import "./commenting-scrollbar.css";
 import {
@@ -11,7 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Heart, SendHorizonal, X} from "lucide-react";
-import Image from "next/image";
+import Image from "next/image";  
 import { Card } from "../ui/card";
 
 type Comment = {

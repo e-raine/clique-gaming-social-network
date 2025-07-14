@@ -20,7 +20,7 @@ interface FeedCardInnerProps {
 	textContent: string;
 }
 
-const FeedCardInner: React.FC<FeedCardInnerProps> = ({
+const FeedCardInner =  React.memo<FeedCardInnerProps>(({
 	author,
 	avatarUrl,
 	date,
@@ -64,6 +64,8 @@ const FeedCardInner: React.FC<FeedCardInnerProps> = ({
 			<FeedCardContent type={type} images={images} textContent={textContent} />
 		</CardContent>
 	</>
-);
+));
+
+FeedCardInner.displayName = 'FeedCardInner';
 
 export default FeedCardInner;

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/frontend/src/components/comment-system/comment.css"],"sourcesContent":[".comment-container {\r\n    padding: 12px;\r\n    margin-bottom: 8px;\r\n    border-radius: 8px;\r\n    background-color: #f8f9fa;\r\n    border: 1px solid #e9ecef;\r\n}\r\n\r\n.comment-container > * {\r\n    /* Reset inherited styles if needed */\r\n    all: initial;\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;AAQA"}}]
+}
