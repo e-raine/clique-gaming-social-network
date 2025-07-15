@@ -1378,7 +1378,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$component
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/button.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/dialog.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/square-pen.js [app-ssr] (ecmascript) <export default as Edit>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.js [app-ssr] (ecmascript) <export default as Plus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-ssr] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -1389,12 +1393,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 const editPostAtom = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jotai$2f$esm$2f$vanilla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["atom"])(null);
 const editPostDialogAtom = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jotai$2f$esm$2f$vanilla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["atom"])(false);
 const editPostErrorAtom = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jotai$2f$esm$2f$vanilla$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["atom"])(null);
-const EditPost = ({ post, children })=>{
+/**
+ * Main EditPost component
+ * Handles editing and deleting posts with image upload functionality
+ */ const EditPost = ({ post, children })=>{
+    // Global state management using Jotai atoms
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jotai$2f$esm$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAtom"])(editPostDialogAtom);
     const [editPost, setEditPost] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jotai$2f$esm$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAtom"])(editPostAtom);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$jotai$2f$esm$2f$react$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useAtom"])(editPostErrorAtom);
-    // Set the post data when dialog opens
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+    // Local state for image handling
+    const [selectedImages, setSelectedImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]); // Store File objects for upload
+    const [imagePreviews, setImagePreviews] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]); // Store data URLs for preview display
+    /**
+     * Effect to initialize the post data when dialog opens
+     * Sets the editPost atom with the current post data
+     */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (isOpen) {
             setEditPost(post);
         }
@@ -1403,29 +1416,45 @@ const EditPost = ({ post, children })=>{
         post,
         setEditPost
     ]);
-    const handleEditSubmit = async (e)=>{
+    /**
+     * Handles form submission for editing a post
+     * TODO: Replace console.log with actual API call
+     * 
+     * @param e - Form submission event
+     */ const handleEditSubmit = async (e)=>{
         e.preventDefault();
         try {
             console.log("Updating post:", editPost);
+            console.log("Selected images:", selectedImages);
             // Add your API call here to update the post
             setIsOpen(false);
             setError(null);
-        } catch (error) {
+        } catch  {
             setError('Error Editing Post');
         }
     };
-    const handleDeleteSubmit = async (e)=>{
+    /**
+     * Handles post deletion
+     * TODO: Replace console.log with actual API call
+     * 
+     * @param e - Form submission event
+     */ const handleDeleteSubmit = async (e)=>{
         e.preventDefault();
         try {
             console.log("Deleting post:", editPost?.id);
             // Add your API call here to delete the post
             setIsOpen(false);
             setError(null);
-        } catch (error) {
+        } catch  {
             setError('Error Deleting Post');
         }
     };
-    const handlePostChange = (e)=>{
+    /**
+     * Handles input changes for text fields
+     * Special handling for tags field - splits space-separated values into array
+     * 
+     * @param e - Input change event from text input or textarea
+     */ const handlePostChange = (e)=>{
         const { name, value } = e.target;
         if (editPost) {
             const newPost = {
@@ -1434,6 +1463,41 @@ const EditPost = ({ post, children })=>{
             };
             setEditPost(newPost);
         }
+    };
+    /**
+     * Handles image file selection and creates preview URLs
+     * Uses FileReader API to generate data URLs for immediate preview
+     * 
+     * @param e - File input change event
+     */ const handleImageChange = (e)=>{
+        const files = Array.from(e.target.files || []);
+        if (files.length > 0) {
+            // Add new files to existing selected images
+            setSelectedImages((prev)=>[
+                    ...prev,
+                    ...files
+                ]);
+            // Create preview URLs for immediate display
+            files.forEach((file)=>{
+                const reader = new FileReader();
+                reader.onload = (e)=>{
+                    const result = e.target?.result;
+                    setImagePreviews((prev)=>[
+                            ...prev,
+                            result
+                        ]);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+    };
+    /**
+     * Removes an image from both the selected files and preview arrays
+     * 
+     * @param index - Index of the image to remove
+     */ const removeImage = (index)=>{
+        setSelectedImages((prev)=>prev.filter((_, i)=>i !== index));
+        setImagePreviews((prev)=>prev.filter((_, i)=>i !== index));
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Dialog"], {
         open: isOpen,
@@ -1449,19 +1513,19 @@ const EditPost = ({ post, children })=>{
                             size: 16
                         }, void 0, false, {
                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                            lineNumber: 82,
+                            lineNumber: 163,
                             columnNumber: 25
                         }, this),
                         "Edit"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                    lineNumber: 81,
+                    lineNumber: 162,
                     columnNumber: 21
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                lineNumber: 79,
+                lineNumber: 160,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DialogContent"], {
@@ -1472,7 +1536,7 @@ const EditPost = ({ post, children })=>{
                         children: "Edit Post"
                     }, void 0, false, {
                         fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                        lineNumber: 88,
+                        lineNumber: 172,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1483,7 +1547,7 @@ const EditPost = ({ post, children })=>{
                                 children: error
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                lineNumber: 91,
+                                lineNumber: 177,
                                 columnNumber: 25
                             }, this),
                             editPost ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1500,7 +1564,7 @@ const EditPost = ({ post, children })=>{
                                                     children: "Edit Post"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                                    lineNumber: 100,
+                                                    lineNumber: 188,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1513,7 +1577,7 @@ const EditPost = ({ post, children })=>{
                                                             children: "Delete"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 190,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1521,19 +1585,19 @@ const EditPost = ({ post, children })=>{
                                                             children: "Save"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 197,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 189,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 187,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1547,7 +1611,7 @@ const EditPost = ({ post, children })=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 204,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1561,7 +1625,7 @@ const EditPost = ({ post, children })=>{
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                            lineNumber: 126,
+                                            lineNumber: 216,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1574,7 +1638,7 @@ const EditPost = ({ post, children })=>{
                                             placeholder: "What game are you playing?"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 228,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -1587,55 +1651,152 @@ const EditPost = ({ post, children })=>{
                                             placeholder: "Add hashtags like #gaming #minecraft #victory"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                            lineNumber: 147,
+                                            lineNumber: 239,
                                             columnNumber: 33
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
-                                            className: "w-full h-[59px] p-5 border rounded-[10px]",
-                                            type: "file",
-                                            id: "images",
-                                            name: "images",
-                                            accept: "image/*",
-                                            multiple: true,
-                                            placeholder: "Upload images"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-3",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "grid grid-cols-2 md:grid-cols-3 gap-3",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "relative",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                type: "file",
+                                                                id: "images",
+                                                                name: "images",
+                                                                accept: "image/*",
+                                                                multiple: true,
+                                                                onChange: handleImageChange,
+                                                                className: "absolute inset-0 w-full h-full opacity-0 cursor-pointer",
+                                                                "aria-label": "Upload images",
+                                                                title: "Upload images"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                lineNumber: 254,
+                                                                columnNumber: 45
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "w-full h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex flex-col items-center gap-1 text-muted-foreground",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
+                                                                            size: 20
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                            lineNumber: 267,
+                                                                            columnNumber: 53
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-xs",
+                                                                            children: "Add Images"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                            lineNumber: 268,
+                                                                            columnNumber: 53
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                    lineNumber: 266,
+                                                                    columnNumber: 49
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                lineNumber: 265,
+                                                                columnNumber: 45
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                        lineNumber: 253,
+                                                        columnNumber: 41
+                                                    }, this),
+                                                    imagePreviews.map((preview, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "relative group",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                    src: preview,
+                                                                    alt: `Preview ${index + 1}`,
+                                                                    width: 200,
+                                                                    height: 96,
+                                                                    className: "w-full h-24 object-cover rounded-lg border"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                    lineNumber: 276,
+                                                                    columnNumber: 49
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    type: "button",
+                                                                    onClick: ()=>removeImage(index),
+                                                                    className: "absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity",
+                                                                    "aria-label": `Remove image ${index + 1}`,
+                                                                    title: `Remove image ${index + 1}`,
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                                                        size: 12
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                        lineNumber: 291,
+                                                                        columnNumber: 53
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                                    lineNumber: 284,
+                                                                    columnNumber: 49
+                                                                }, this)
+                                                            ]
+                                                        }, index, true, {
+                                                            fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                            lineNumber: 275,
+                                                            columnNumber: 45
+                                                        }, this))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
+                                                lineNumber: 251,
+                                                columnNumber: 37
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                            lineNumber: 157,
+                                            lineNumber: 250,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 185,
                                     columnNumber: 29
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                lineNumber: 97,
+                                lineNumber: 184,
                                 columnNumber: 25
-                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            }, this) : // Loading state
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: "Loading..."
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                                lineNumber: 169,
+                                lineNumber: 301,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                        lineNumber: 89,
+                        lineNumber: 174,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-                lineNumber: 87,
+                lineNumber: 170,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx",
-        lineNumber: 78,
+        lineNumber: 158,
         columnNumber: 9
     }, this);
 };
