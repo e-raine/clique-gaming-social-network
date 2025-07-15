@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './AuthPage.module.css';
+import './auth.css'
 
 type Props = {
   switchForm: () => void;
@@ -8,16 +8,16 @@ type Props = {
 
 const SignInForm: React.FC<Props> = ({ switchForm }) => {
   return (
-    <div className={styles.formBox}>
-      <h2 className={styles.formTitle}>Log in to your account</h2>
-      <p className={styles.formSubtext}>
-        Don't have an account? <button className={styles.link} onClick={switchForm}>Sign up</button>
+    <div className="form-box">
+      <h2 className="form-title">Log in to your account</h2>
+      <p className="form-subtext">
+        Don't have an account? <button className="link" onClick={switchForm}>Sign up</button>
       </p>
-      <input className={styles.input} placeholder="Email Address or Username" />
-      <input className={styles.input} type="password" placeholder="Password" />
-      <button className={styles.btnPrimary}>Log in</button>
-      <div className={styles.divider}>or continue with</div>
-      <button className={styles.btnSecondary}>Google</button>
+      <input className="input" placeholder="Email Address or Username" />
+      <input className="input" type="password" placeholder="Password" />
+      <button className="btn-primary">Log in</button>
+      <div className="divider">or continue with</div>
+      <button className="btn-secondary">Google</button>
     </div>
 
   );

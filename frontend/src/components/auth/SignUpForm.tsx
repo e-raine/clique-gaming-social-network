@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './AuthPage.module.css';
+import './auth.css'
 
 type Props = {
   switchForm: () => void;
@@ -8,20 +8,20 @@ type Props = {
 
 const SignUpForm: React.FC<Props> = ({ switchForm }) => {
   return (
-    <div className={styles.formBox}>
-      <h2 className={styles.formTitle}>Create an account</h2>
-      <p className={styles.formSubtext}>
+    <div className="form-box">
+      <h2 className="form-title">Create an account</h2>
+      <p className="form-subtext">
         Already have an account?{' '}
-        <button className={styles.link} onClick={switchForm}>Log in</button>
+        <button className="link" onClick={switchForm}>Log in</button>
       </p>
-      <input className={styles.input} placeholder="First Name" />
-      <input className={styles.input} placeholder="Last Name" />
-      <input className={styles.input} placeholder="Username" />
-      <input className={styles.input} placeholder="Email Address" />
-      <input className={styles.input} type="password" placeholder="Password" />
-      <button className={styles.btnPrimary}>Create account</button>
-      <div className={styles.divider}>or register with</div>
-      <button className={styles.btnSecondary}>Google</button>
+      <input className="input" placeholder="First Name" />
+      <input className="input" placeholder="Last Name" />
+      <input className="input" placeholder="Username" />
+      <input className="input" placeholder="Email Address" />
+      <input className="input" type="password" placeholder="Password" />
+      <button className="btn-primary">Create account</button>
+      <div className="divider">or register with</div>
+      <button className="btn-secondary">Google</button>
     </div>
   );
 }

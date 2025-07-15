@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .auth-container {
   display: flex;
   height: 100vh;
@@ -14,7 +9,7 @@ body {
   flex: 1;
   position: relative;
   background: 
-    url('/public/images/icon-loop2.png') repeat,
+    url('/images/icon-loop2.png') repeat,
     radial-gradient(circle at bottom center, #ff00cc -100%, #32005c 70%, #1e003d 100%);
   background-size: 256px auto, cover;
   background-position: 0 0, center;

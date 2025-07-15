@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import SignUpForm from './SignUpForm';
 import SignInForm from './SignInForm';
 
-import styles from './AuthPage.module.css';
+import './auth.css'
 
 export default function AuthPage() {
   const [isSignUp, setIsSignUp] = useState(true);
 
   return (
-    <div className={styles['auth-container']}>
-      <div className={styles['auth-bg']} />
-      <div className={styles['auth-form']}>
+    <div className='auth-container'>
+      <div className='auth-bg' />
+      <div className='auth-form'>
         {isSignUp ? (
           <SignUpForm switchForm={() => setIsSignUp(false)} />
         ) : (
