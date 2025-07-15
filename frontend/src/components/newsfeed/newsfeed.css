@@ -1,0 +1,140 @@
+:root {
+  --cprimary: #f208ff;
+  --cbackground: #0b0b0d;
+  --ccard: #16161b;
+  --ctext-muted: #b0b3b8;
+  --cwhite: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cbackground);
+  color: var(--cwhite);
+}
+
+.newsfeed-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.newsfeed-main {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.newsfeed-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logo-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--ccard);
+  color: white;
+}
+
+.search-input::placeholder {
+  color: var(--ctext-muted);
+}
+
+.search-btn {
+  background: var(--cprimary);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.post-card {
+  background: var(--ccard);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: var(--ctext-muted);
+}
+
+.post-caption {
+  margin: 1rem 0 0.5rem;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.post-footer {
+  margin-top: 0.75rem;
+  color: var(--ctext-muted);
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.sidebar-left {
+  width: 60px;
+  background: var(--cbackground);
+  border-right: 1px solid #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-right {
+  width: 300px;
+  background: var(--cbackground);
+  border-left: 1px solid #1f1f1f;
+  padding: 1rem;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-right {
+    display: block;
+  }
+}

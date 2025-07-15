@@ -6,6 +6,7 @@
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
@@ -625,6 +626,10 @@
     width: calc(var(--spacing) * 8);
   }
 
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+
   .w-full {
     width: 100%;
   }
@@ -801,6 +806,12 @@
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
   }
 
+  :where(.space-x-4 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .self-start {
     align-self: flex-start;
   }
@@ -863,6 +874,16 @@
     border-width: 2px;
   }
 
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
@@ -871,6 +892,14 @@
   .border-solid {
     --tw-border-style: solid;
     border-style: solid;
+  }
+
+  .border-\[\#22222A\] {
+    border-color: #22222a;
+  }
+
+  .border-\[\#F208FF\] {
+    border-color: #f208ff;
   }
 
   .border-black\/\[\.08\] {
@@ -893,6 +922,14 @@
 
   .border-transparent {
     border-color: #0000;
+  }
+
+  .bg-\[\#16161B\] {
+    background-color: #16161b;
+  }
+
+  .bg-\[\#F208FF\] {
+    background-color: #f208ff;
   }
 
   .bg-background {
@@ -1063,6 +1100,10 @@
     padding-right: calc(var(--spacing) * 2);
   }
 
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -1173,6 +1214,10 @@
     white-space: pre-wrap;
   }
 
+  .text-\[\#F208FF\] {
+    color: #f208ff;
+  }
+
   .text-background {
     color: var(--background);
   }
@@ -1183,6 +1228,10 @@
 
   .text-foreground {
     color: var(--foreground);
+  }
+
+  .text-gray-400 {
+    color: var(--color-gray-400);
   }
 
   .text-gray-600 {
@@ -2142,6 +2191,12 @@ body {
 }
 
 @property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --tw-space-x-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;

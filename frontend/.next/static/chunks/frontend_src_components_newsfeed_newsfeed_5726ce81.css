@@ -1,0 +1,143 @@
+/* [project]/frontend/src/components/newsfeed/newsfeed.css [app-client] (css) */
+:root {
+  --cprimary: #f208ff;
+  --cbackground: #0b0b0d;
+  --ccard: #16161b;
+  --ctext-muted: #b0b3b8;
+  --cwhite: #fff;
+}
+
+body {
+  background-color: var(--cbackground);
+  color: var(--cwhite);
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+}
+
+.newsfeed-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.newsfeed-main {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.newsfeed-header {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.search-input {
+  background: var(--ccard);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  flex: 1;
+  padding: .5rem;
+}
+
+.search-input::placeholder {
+  color: var(--ctext-muted);
+}
+
+.search-btn {
+  background: var(--cprimary);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: .5rem;
+}
+
+.posts-container {
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.post-card {
+  background: var(--ccard);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.post-header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.user-info {
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.timestamp {
+  color: var(--ctext-muted);
+  font-size: .75rem;
+}
+
+.post-caption {
+  margin: 1rem 0 .5rem;
+}
+
+.post-image {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.post-footer {
+  color: var(--ctext-muted);
+  gap: 1.5rem;
+  margin-top: .75rem;
+  font-size: .9rem;
+  display: flex;
+}
+
+.sidebar-left {
+  background: var(--cbackground);
+  border-right: 1px solid #1f1f1f;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  display: flex;
+}
+
+.sidebar-right {
+  background: var(--cbackground);
+  border-left: 1px solid #1f1f1f;
+  width: 300px;
+  padding: 1rem;
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .sidebar-right {
+    display: block;
+  }
+}
+
+
+/*# sourceMappingURL=frontend_src_components_newsfeed_newsfeed_5726ce81.css.map*/
