@@ -10,6 +10,20 @@
   padding: 2rem;
   text-align: center; */
 
+  /* CLIQUE COLOR PALETTE */
+  --cprimary: #F208FF;
+  --cprimary-foreground: oklch(100% 0.00011 271.152 / 0.80);
+  --csecondary: #FFCC00;
+  --csecondary-foreground: ;
+
+  /* for ui page colors */
+  --cbackground: #0B0B0D;
+  --cforeground: #E2E4E8; /* main text/object color */
+  --ctext-muted: oklch(92.956% 0.00529 248.339 / 0.80); /* secondary/muted text color */
+
+  --ccard: #16161B;
+  --ccard-foreground: #22222A;
+
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

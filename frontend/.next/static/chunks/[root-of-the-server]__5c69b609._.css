@@ -1739,6 +1739,15 @@
 }
 
 :root {
+  --cprimary: #f208ff;
+  --cprimary-foreground: oklch(100% .00011 271.152 / .8);
+  --csecondary: #fc0;
+  --csecondary-foreground: ;
+  --cbackground: #0b0b0d;
+  --cforeground: #e2e4e8;
+  --ctext-muted: oklch(92.956% .00529 248.339 / .8);
+  --ccard: #16161b;
+  --ccard-foreground: #22222a;
   --background: oklch(1 0 0);
   --foreground: oklch(.145 0 0);
   --radius: .625rem;
