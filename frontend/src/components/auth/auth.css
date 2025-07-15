@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   width: 100%;
-  background: black;
+  background: var(--cbackground); 
 }
 
 .auth-bg {
@@ -27,8 +27,8 @@
 
 .auth-form {
   flex: 1;
-  background: #0b0b0d;
-  color: white;
+  background: var(--cbackground);
+  color: var(--cforeground);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +43,13 @@
   gap: 1rem;
 }
 
+.input-box {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-title {
   font-size: 2.8rem;
   font-weight: bold;
@@ -51,13 +58,13 @@
 
 .form-subtext {
   font-size: 0.875rem;
-  color: #E2E4E8;
+  color: var(--ctext-muted);
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .link {
-  color: #FFCC00;
+  color: var(--csecondary);
   background: none;
   border: none;
   padding: 0;
@@ -68,35 +75,85 @@
 
 .input {
   padding: 0.75rem;
-  border-radius: 6px;
+  padding-left: 15px;
+  border-radius: 5px;
   border: none;
-  background: #16161B;
-  color: white;
+  background: var(--ccard);
+  color: var(--ctext-muted);
+  margin-bottom: 12px;
+  width: 100%;
+  font-size: 13px;
+}
+
+input:focus {
+  outline: none;
+  background: var(--ccard-foreground);
 }
 
 .btn-primary {
   padding: 0.75rem;
-  background: #F208FF;
+  background: var(--cprimary);
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--cprimary-foreground);
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-primary:hover{
+  background: #D100E5;
+}
+
+.btn-primary:active{
+  background: #B300CC
 }
 
 .btn-secondary {
   padding: 0.75rem;
-  background: white;
-  color: black;
+  background: var(--cforeground);
+  color: var(--cbackground);
   font-weight: bold;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #C7C9CE; /* or use var(--csecondary-hover) */
+}
+
+.btn-secondary:active {
+  background: #B6B8BD; /* slightly deeper hover */
 }
 
 .divider {
   text-align: center;
-  color: #777;
-  margin: 1rem 0;
+  color: var(--ctext-muted);
+  margin: 0.2rem 0;
   font-size: 0.85rem;
+}
+
+.line{
+  flex-grow: 1;
+  height: 1px;
+  border: none;
+  background-color: var(--ctext-muted);
+}
+
+.continue{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; /* space between lines and text */
+}
+
+.fname, .lname {
+  flex: 1 1 48%;
+}
+
+.fullName {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
 }

@@ -1,6 +1,6 @@
 /* [project]/frontend/src/components/auth/auth.css [app-client] (css) */
 .auth-container {
-  background: #000;
+  background: var(--cbackground);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -28,8 +28,8 @@
 }
 
 .auth-form {
-  color: #fff;
-  background: #0b0b0d;
+  background: var(--cbackground);
+  color: var(--cforeground);
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -45,6 +45,13 @@
   display: flex;
 }
 
+.input-box {
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+}
+
 .form-title {
   margin: 0;
   font-size: 2.8rem;
@@ -52,13 +59,13 @@
 }
 
 .form-subtext {
-  color: #e2e4e8;
-  margin: 0 0 10px;
+  color: var(--ctext-muted);
+  margin: 0 0 7px;
   font-size: .875rem;
 }
 
 .link {
-  color: #fc0;
+  color: var(--csecondary);
   font: inherit;
   cursor: pointer;
   background: none;
@@ -68,38 +75,87 @@
 }
 
 .input {
-  color: #fff;
-  background: #16161b;
+  background: var(--ccard);
+  color: var(--ctext-muted);
   border: none;
-  border-radius: 6px;
-  padding: .75rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: .75rem .75rem .75rem 15px;
+  font-size: 13px;
+}
+
+input:focus {
+  background: var(--ccard-foreground);
+  outline: none;
 }
 
 .btn-primary {
-  color: #ffffffb3;
+  background: var(--cprimary);
+  color: var(--cprimary-foreground);
   cursor: pointer;
-  background: #f208ff;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: .75rem;
   font-weight: bold;
 }
 
+.btn-primary:hover {
+  background: #d100e5;
+}
+
+.btn-primary:active {
+  background: #b300cc;
+}
+
 .btn-secondary {
-  color: #000;
+  background: var(--cforeground);
+  color: var(--cbackground);
   cursor: pointer;
-  background: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: .75rem;
   font-weight: bold;
+}
+
+.btn-secondary:hover {
+  background: #c7c9ce;
+}
+
+.btn-secondary:active {
+  background: #b6b8bd;
 }
 
 .divider {
   text-align: center;
-  color: #777;
-  margin: 1rem 0;
+  color: var(--ctext-muted);
+  margin: .2rem 0;
   font-size: .85rem;
+}
+
+.line {
+  background-color: var(--ctext-muted);
+  border: none;
+  flex-grow: 1;
+  height: 1px;
+}
+
+.continue {
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.fname, .lname {
+  flex: 48%;
+}
+
+.fullName {
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
 }
 
 

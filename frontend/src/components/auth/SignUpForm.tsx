@@ -14,13 +14,30 @@ const SignUpForm: React.FC<Props> = ({ switchForm }) => {
         Already have an account?{' '}
         <button className="link" onClick={switchForm}>Log in</button>
       </p>
-      <input className="input" placeholder="First Name" />
-      <input className="input" placeholder="Last Name" />
-      <input className="input" placeholder="Username" />
-      <input className="input" placeholder="Email Address" />
-      <input className="input" type="password" placeholder="Password" />
+      <div className="input-box">
+        <div className="fullName">
+          <div className="fname">
+            <p className="form-subtext">First Name</p>
+            <input className="input" placeholder="e.g. John" />
+          </div>
+          <div className="lname">
+            <p className="form-subtext">Last Name</p>
+            <input className="input" placeholder="e.g. Doe" />
+          </div>
+        </div>
+        <p className="form-subtext">Username</p>
+        <input className="input" placeholder="e.g. john.loves.dogs" />
+        <p className="form-subtext">Email Address</p>
+        <input className="input" placeholder="e.g. johndoe@gmail.com" />
+        <p className="form-subtext">Password</p>
+        <input className="input" type="password" placeholder="Enter your password" />
+      </div>
       <button className="btn-primary">Create account</button>
-      <div className="divider">or register with</div>
+      <div className="continue">
+        <hr className="line"/>
+        <div className="divider">or continue with</div>
+        <hr className="line"/>
+      </div>
       <button className="btn-secondary">Google</button>
     </div>
   );
