@@ -156,7 +156,6 @@ const EditPost = ({ post, children }: EditPostDialogProps) => {
 
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
-            {/* Dialog Trigger - Can be customized via children prop */}
             <DialogTrigger asChild>
                 {children || (
                     <Button variant="outline" size="sm">
