@@ -1,57 +1,65 @@
 "use client";
 import { FeedCard, FeedCardProps } from "@/components/feed-card/FeedCard";
 import AddPost from "@/components/feed-card/post-actions/AddPost";
+import { useMemo } from "react";
 
 const Feed = () => {
-    const FeedCardList: FeedCardProps[] = [
+    const FeedCardList: FeedCardProps[] = useMemo(() => [
         {	
-            id: 1233,
+            id: 1001,
             type: "grid-images",
             images: [
-                "/images/mob1.jpg",
-                "/images/mob2.jpg",
-                "/images/mob3.jpg",
-                "/images/mob4.jpg",
+                "/images/apex1.jpg",
+                "/images/apex2.jpg",
+                "/images/apex3.jpg",
+                "/images/apex4.jpg",
             ],
-            textContent: "Survived the Ocean Monument, and here's proof!",
-            author: "Charles",
-            avatarUrl: "/images/charles-avatar.jpg",
+            textContent: "Finally hit Diamond rank! The grind was real but totally worth it.",
+            author: "Sarah",
+            avatarUrl: "/images/sarah-avatar.jpg",
             date: new Date(),
-            game: "Minecraft",
-            postTitle: "Ocean Raid Highlights"
+            game: "Apex Legends",
+            postTitle: "Diamond Rank Achievement",
+            tags: ["ranked", "diamond", "achievement", "grind"]
         },
         {	
-            id: 2131232,
+            id: 1002,
             type: "text",
-            textContent: "Survived the Ocean Monument, and here's proof!",
-            author: "Charles",
-            avatarUrl: "/images/charles-avatar.jpg",
+            textContent: "Looking for a duo partner for ranked games. Must have good communication and be at least Platinum level.",
+            author: "Mike",
+            avatarUrl: "/images/mike-avatar.jpg",
             date: new Date(),
-            game: "Minecraft",
-            postTitle: "Ocean Raid Highlights"
+            game: "Valorant",
+            postTitle: "LFG Ranked Partner",
+            tags: ["lfg", "duo", "ranked", "platinum"]
         },
         {
-            id: 32113212,
+            id: 1003,
             type: "single-image",
-            images: ["/images/mob1.jpg"],
-            textContent: "Survived the Ocean Monument, and here's proof!",
-            author: "Charles",
-            avatarUrl: "/images/charles-avatar.jpg",
+            images: ["/images/bossfight.jpg"],
+            textContent: "After 50+ attempts, finally defeated this boss! The satisfaction is unreal.",
+            author: "Alex",
+            avatarUrl: "/images/alex-avatar.jpg",
             date: new Date(),
-            game: "Minecraft",
-            postTitle: "Ocean Raid Highlights"
+            game: "Elden Ring",
+            postTitle: "Boss Victory",
+            tags: ["boss", "victory", "challenge", "souls-like"]
         }
-    ];
+    ], []);
     
     return (
-        <div className="gap-2 flex flex-col">
+        <div className="space-y-4">
             <AddPost />
-            {FeedCardList.map((feedCard) => (
-                <FeedCard
-                    key={feedCard.id}
-                    {...feedCard}
-                />
-            ))}
+            
+            {/* Feed Posts */}
+            <div className="gap-2 flex flex-col">
+                {FeedCardList.map((feedCard) => (
+                    <FeedCard
+                        key={feedCard.id}
+                        {...feedCard}
+                    />
+                ))}
+            </div>
         </div>
     );
 };

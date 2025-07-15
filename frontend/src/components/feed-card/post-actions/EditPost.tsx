@@ -5,9 +5,11 @@ import { FeedCardProps } from "@/components/feed-card/FeedCard";
 import { atom, useAtom } from "jotai";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 import { Edit} from "lucide-react";
 
+
+//Jotai Atoms
 export const editPostAtom = atom<FeedCardProps | null>(null);
 export const editPostDialogAtom = atom<boolean>(false);
 export const editPostErrorAtom = atom<string | null>(null);
@@ -83,6 +85,7 @@ const EditPost = ({ post, children }: EditPostDialogProps) => {
                 )}
             </DialogTrigger>
             <DialogContent className="max-w-[750px] max-h-[90vh] overflow-y-auto">
+                <DialogTitle className="sr-only">Edit Post</DialogTitle>
                 <div className="flex flex-col items-center p-6">
                     {error && (
                         <div className="mb-4 w-full max-w-lg bg-red-400 p-4 rounded-lg">

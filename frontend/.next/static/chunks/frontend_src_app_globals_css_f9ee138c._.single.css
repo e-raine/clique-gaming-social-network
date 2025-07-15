@@ -64,6 +64,8 @@
     --color-red-400: oklch(70.4% .191 22.216);
     --color-red-500: oklch(63.7% .237 25.331);
     --color-red-600: oklch(57.7% .245 27.325);
+    --color-purple-600: oklch(55.8% .288 302.321);
+    --color-purple-700: oklch(49.6% .265 301.924);
     --color-gray-600: oklch(44.6% .03 256.802);
     --color-black: #000;
     --color-white: #fff;
@@ -446,6 +448,10 @@
     margin-top: calc(var(--spacing) * 3);
   }
 
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
+
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -464,6 +470,10 @@
 
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+
+  .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
   }
 
   .ml-6 {
@@ -561,6 +571,10 @@
     height: 752px;
   }
 
+  .h-auto {
+    height: auto;
+  }
+
   .h-px {
     height: 1px;
   }
@@ -649,6 +663,10 @@
 
   .cursor-default {
     cursor: default;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
   }
 
   .resize-none {
@@ -745,6 +763,18 @@
 
   .gap-\[32px\] {
     gap: 32px;
+  }
+
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
   }
 
   :where(.space-y-4 > :not(:last-child)) {
@@ -885,6 +915,10 @@
     background-color: var(--primary);
   }
 
+  .bg-purple-600 {
+    background-color: var(--color-purple-600);
+  }
+
   .bg-red-400 {
     background-color: var(--color-red-400);
   }
@@ -937,6 +971,10 @@
     padding-inline: calc(var(--spacing) * 2);
   }
 
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -973,8 +1011,16 @@
     padding-block: calc(var(--spacing) * 2);
   }
 
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
   }
 
   .pt-4 {
@@ -1348,6 +1394,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-purple-700:hover {
+      background-color: var(--color-purple-700);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-secondary\/80:hover {
       background-color: var(--secondary);
     }
@@ -1380,6 +1432,12 @@
   @media (hover: hover) {
     .hover\:underline-offset-4:hover {
       text-underline-offset: 4px;
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:opacity-80:hover {
+      opacity: .8;
     }
   }
 
@@ -1421,6 +1479,11 @@
       outline-offset: 2px;
       outline: 2px solid #0000;
     }
+  }
+
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
   }
 
   .focus-visible\:border-ring:focus-visible {

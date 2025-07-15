@@ -1763,15 +1763,481 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/frontend/src/components/feed-card/FeedCardInner.tsx [app-client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/frontend/src/components/ui/tag.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
 
-var { g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports } = __turbopack_context__;
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-const e = new Error(`Could not parse module '[project]/frontend/src/components/feed-card/FeedCardInner.tsx'
+__turbopack_context__.s({
+    "Tag": (()=>Tag)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/lib/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+const Tag = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].forwardRef(_c = ({ className, variant = "default", size = "sm", ...props }, ref)=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2", {
+            "bg-primary text-primary-foreground hover:bg-primary/90": variant === "default",
+            "bg-secondary text-secondary-foreground hover:bg-secondary/80": variant === "secondary",
+            "bg-destructive text-destructive-foreground hover:bg-destructive/90": variant === "destructive",
+            "border border-input bg-background hover:bg-accent hover:text-accent-foreground": variant === "outline"
+        }, {
+            "px-2 py-0.5 text-xs": size === "sm",
+            "px-2.5 py-0.5 text-sm": size === "md",
+            "px-3 py-1 text-sm": size === "lg"
+        }, className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/frontend/src/components/ui/tag.tsx",
+        lineNumber: 12,
+        columnNumber: 13
+    }, this);
+});
+_c1 = Tag;
+Tag.displayName = "Tag";
+;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "Tag$React.forwardRef");
+__turbopack_context__.k.register(_c1, "Tag");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/frontend/src/components/ui/tag-list.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
 
-Expected corresponding JSX closing tag for <div>`);
-e.code = 'MODULE_UNPARSEABLE';
-throw e;}}),
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "TagList": (()=>TagList)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$tag$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/tag.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/lib/utils.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+;
+const TagList = /*#__PURE__*/ _s(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].forwardRef(_c = _s(({ className, tags, variant = "secondary", size = "sm", maxTags, showMoreText = "more", onTagClick, ...props }, ref)=>{
+    _s();
+    const [showAll, setShowAll] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const visibleTags = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useMemo({
+        "TagList.useMemo[visibleTags]": ()=>{
+            if (!maxTags || showAll) return tags;
+            return tags.slice(0, maxTags);
+        }
+    }["TagList.useMemo[visibleTags]"], [
+        tags,
+        maxTags,
+        showAll
+    ]);
+    const hasMoreTags = maxTags && tags.length > maxTags && !showAll;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-wrap gap-1", className),
+        ...props,
+        children: [
+            visibleTags.map((tag, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$tag$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tag"], {
+                    variant: variant,
+                    size: size,
+                    className: onTagClick ? "cursor-pointer hover:opacity-80" : "",
+                    onClick: ()=>onTagClick?.(tag),
+                    children: [
+                        "#",
+                        tag
+                    ]
+                }, `${tag}-${index}`, true, {
+                    fileName: "[project]/frontend/src/components/ui/tag-list.tsx",
+                    lineNumber: 41,
+                    columnNumber: 21
+                }, this)),
+            hasMoreTags && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$tag$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tag"], {
+                variant: "outline",
+                size: size,
+                className: "cursor-pointer hover:opacity-80",
+                onClick: ()=>setShowAll(true),
+                children: [
+                    "+",
+                    tags.length - maxTags,
+                    " ",
+                    showMoreText
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/src/components/ui/tag-list.tsx",
+                lineNumber: 52,
+                columnNumber: 21
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/frontend/src/components/ui/tag-list.tsx",
+        lineNumber: 35,
+        columnNumber: 13
+    }, this);
+}, "+/nRwoKjxGml6Ou/Bf/DZvGPD54=")), "+/nRwoKjxGml6Ou/Bf/DZvGPD54=");
+_c1 = TagList;
+TagList.displayName = "TagList";
+;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "TagList$React.forwardRef");
+__turbopack_context__.k.register(_c1, "TagList");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/frontend/src/components/feed-card/FeedCardInner.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/avatar.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$separator$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-separator/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2d$vertical$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreVertical$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/ellipsis-vertical.js [app-client] (ecmascript) <export default as MoreVertical>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/square-pen.js [app-client] (ecmascript) <export default as Edit>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flag$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flag$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flag.js [app-client] (ecmascript) <export default as Flag>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/share.js [app-client] (ecmascript) <export default as Share>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bookmark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bookmark$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bookmark.js [app-client] (ecmascript) <export default as Bookmark>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$minus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserMinus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user-minus.js [app-client] (ecmascript) <export default as UserMinus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/FeedCardContent.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/dropdown-menu.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$EditPost$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$tag$2d$list$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/tag-list.tsx [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].memo(_c = ({ id, author, avatarUrl, tags, date, game, postTitle, type, images, textContent })=>{
+    // Create the current post object for EditPostDialog
+    const currentPost = {
+        id,
+        type,
+        images,
+        textContent,
+        author,
+        avatarUrl,
+        tags,
+        date,
+        game,
+        postTitle
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                className: "px-6 py-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-between items-start",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex text-left gap-3 items-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Avatar"], {
+                                        className: "size-15",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AvatarImage"], {
+                                                src: avatarUrl || undefined,
+                                                alt: author
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AvatarFallback"], {
+                                                children: author?.[0]?.toUpperCase() || "?"
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 68,
+                                                columnNumber: 29
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                className: "font-medium text-sm",
+                                                children: author
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 71,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$separator$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Separator"], {}, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 72,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-muted-foreground",
+                                                children: date.toLocaleDateString()
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 73,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-muted-foreground leading-3",
+                                                children: game
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 76,
+                                                columnNumber: 29
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                        lineNumber: 70,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                lineNumber: 65,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "right-section flex gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        variant: "default",
+                                        children: "Follow"
+                                    }, void 0, false, {
+                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                        lineNumber: 82,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuTrigger"], {
+                                                asChild: true,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                    variant: "ghost",
+                                                    size: "icon",
+                                                    "aria-label": "More options",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2d$vertical$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreVertical$3e$__["MoreVertical"], {
+                                                        className: "h-4 w-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 86,
+                                                        columnNumber: 37
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                    lineNumber: 85,
+                                                    columnNumber: 33
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 84,
+                                                columnNumber: 29
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
+                                                align: "end",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$EditPost$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        post: currentPost,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                            onSelect: (e)=>e.preventDefault(),
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__["Edit"], {
+                                                                    className: "mr-2 h-4 w-4"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                                    lineNumber: 92,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                "Edit Post"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                            lineNumber: 91,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 90,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share$3e$__["Share"], {
+                                                                className: "mr-2 h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                                lineNumber: 97,
+                                                                columnNumber: 37
+                                                            }, this),
+                                                            "Share Post"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 96,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bookmark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bookmark$3e$__["Bookmark"], {
+                                                                className: "mr-2 h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                                lineNumber: 101,
+                                                                columnNumber: 37
+                                                            }, this),
+                                                            "Save Post"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 100,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 104,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$minus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserMinus$3e$__["UserMinus"], {
+                                                                className: "mr-2 h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                                lineNumber: 106,
+                                                                columnNumber: 37
+                                                            }, this),
+                                                            "Unfollow ",
+                                                            author
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 105,
+                                                        columnNumber: 33
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                        className: "text-red-600",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flag$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Flag$3e$__["Flag"], {
+                                                                className: "mr-2 h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                                lineNumber: 110,
+                                                                columnNumber: 37
+                                                            }, this),
+                                                            "Report Post"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                        lineNumber: 109,
+                                                        columnNumber: 33
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                lineNumber: 89,
+                                                columnNumber: 29
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                        lineNumber: 83,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                lineNumber: 81,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                        lineNumber: 63,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                        className: "mt-3 text-lg font-semibold",
+                        children: postTitle
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                        lineNumber: 119,
+                        columnNumber: 17
+                    }, this),
+                    tags && tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$tag$2d$list$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TagList"], {
+                            tags: tags,
+                            variant: "secondary",
+                            size: "sm",
+                            maxTags: 5,
+                            onTagClick: (tag)=>{
+                                // TODO: Implement tag click handler for filtering/navigation
+                                console.log(`Clicked tag: ${tag}`);
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                            lineNumber: 124,
+                            columnNumber: 25
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                        lineNumber: 123,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                lineNumber: 62,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FeedCardContent"], {
+                    type: type,
+                    images: images,
+                    textContent: textContent
+                }, void 0, false, {
+                    fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                    lineNumber: 139,
+                    columnNumber: 17
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                lineNumber: 138,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true);
+});
+_c1 = FeedCardInner;
+FeedCardInner.displayName = 'FeedCardInner';
+const __TURBOPACK__default__export__ = FeedCardInner;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "FeedCardInner$React.memo");
+__turbopack_context__.k.register(_c1, "FeedCardInner");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/frontend/src/components/feed-card/FeedCard.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -2160,6 +2626,164 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/frontend/src/hooks/useTagFilter.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "GAMING_TAG_CATEGORIES": (()=>GAMING_TAG_CATEGORIES),
+    "getRandomTags": (()=>getRandomTags),
+    "useTagFilter": (()=>useTagFilter)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+;
+const useTagFilter = (initialTags = [])=>{
+    _s();
+    const [selectedTags, setSelectedTags] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(initialTags);
+    const addTag = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useTagFilter.useCallback[addTag]": (tag)=>{
+            setSelectedTags({
+                "useTagFilter.useCallback[addTag]": (prev)=>{
+                    if (prev.includes(tag)) return prev;
+                    return [
+                        ...prev,
+                        tag
+                    ];
+                }
+            }["useTagFilter.useCallback[addTag]"]);
+        }
+    }["useTagFilter.useCallback[addTag]"], []);
+    const removeTag = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useTagFilter.useCallback[removeTag]": (tag)=>{
+            setSelectedTags({
+                "useTagFilter.useCallback[removeTag]": (prev)=>prev.filter({
+                        "useTagFilter.useCallback[removeTag]": (t)=>t !== tag
+                    }["useTagFilter.useCallback[removeTag]"])
+            }["useTagFilter.useCallback[removeTag]"]);
+        }
+    }["useTagFilter.useCallback[removeTag]"], []);
+    const toggleTag = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useTagFilter.useCallback[toggleTag]": (tag)=>{
+            setSelectedTags({
+                "useTagFilter.useCallback[toggleTag]": (prev)=>{
+                    if (prev.includes(tag)) {
+                        return prev.filter({
+                            "useTagFilter.useCallback[toggleTag]": (t)=>t !== tag
+                        }["useTagFilter.useCallback[toggleTag]"]);
+                    }
+                    return [
+                        ...prev,
+                        tag
+                    ];
+                }
+            }["useTagFilter.useCallback[toggleTag]"]);
+        }
+    }["useTagFilter.useCallback[toggleTag]"], []);
+    const clearTags = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useTagFilter.useCallback[clearTags]": ()=>{
+            setSelectedTags([]);
+        }
+    }["useTagFilter.useCallback[clearTags]"], []);
+    const hasTag = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useTagFilter.useCallback[hasTag]": (tag)=>{
+            return selectedTags.includes(tag);
+        }
+    }["useTagFilter.useCallback[hasTag]"], [
+        selectedTags
+    ]);
+    const filterPosts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useTagFilter.useCallback[filterPosts]": (posts)=>{
+            if (selectedTags.length === 0) return posts;
+            return posts.filter({
+                "useTagFilter.useCallback[filterPosts]": (post)=>post.tags && post.tags.some({
+                        "useTagFilter.useCallback[filterPosts]": (tag)=>selectedTags.includes(tag)
+                    }["useTagFilter.useCallback[filterPosts]"])
+            }["useTagFilter.useCallback[filterPosts]"]);
+        }
+    }["useTagFilter.useCallback[filterPosts]"], [
+        selectedTags
+    ]);
+    return {
+        selectedTags,
+        isFiltering: selectedTags.length > 0,
+        addTag,
+        removeTag,
+        toggleTag,
+        clearTags,
+        hasTag,
+        filterPosts
+    };
+};
+_s(useTagFilter, "Q6r5rp7v0yYMasVa6l5QHuQIjxs=");
+const GAMING_TAG_CATEGORIES = {
+    GAME_MODES: [
+        'ranked',
+        'casual',
+        'competitive',
+        'arena',
+        'battle-royale',
+        'co-op',
+        'single-player'
+    ],
+    ACHIEVEMENTS: [
+        'victory',
+        'achievement',
+        'milestone',
+        'high-score',
+        'completion',
+        'speedrun'
+    ],
+    SOCIAL: [
+        'lfg',
+        'duo',
+        'squad',
+        'team',
+        'guild',
+        'clan',
+        'tournament'
+    ],
+    CONTENT_TYPE: [
+        'gameplay',
+        'tutorial',
+        'guide',
+        'tips',
+        'review',
+        'montage',
+        'highlight'
+    ],
+    DIFFICULTY: [
+        'easy',
+        'medium',
+        'hard',
+        'expert',
+        'nightmare',
+        'casual',
+        'hardcore'
+    ],
+    GENRES: [
+        'fps',
+        'moba',
+        'rpg',
+        'strategy',
+        'simulation',
+        'sports',
+        'racing',
+        'fighting'
+    ]
+};
+const getRandomTags = (count = 3)=>{
+    const allTags = Object.values(GAMING_TAG_CATEGORIES).flat();
+    const shuffled = [
+        ...allTags
+    ].sort(()=>0.5 - Math.random());
+    return shuffled.slice(0, count);
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/frontend/src/app/feed/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -2171,92 +2795,160 @@ __turbopack_context__.s({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/FeedCard.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$AddPost$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/post-actions/AddPost.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$hooks$2f$useTagFilter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/hooks/useTagFilter.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
 const Feed = ()=>{
-    const FeedCardList = [
-        {
-            id: 1001,
-            type: "grid-images",
-            images: [
-                "/images/apex1.jpg",
-                "/images/apex2.jpg",
-                "/images/apex3.jpg",
-                "/images/apex4.jpg"
-            ],
-            textContent: "Finally hit Diamond rank! The grind was real but totally worth it.",
-            author: "Sarah",
-            avatarUrl: "/images/sarah-avatar.jpg",
-            date: new Date(),
-            game: "Apex Legends",
-            postTitle: "Diamond Rank Achievement",
-            tags: [
-                "ranked",
-                "diamond",
-                "achievement",
-                "grind"
+    _s();
+    const FeedCardList = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Feed.useMemo[FeedCardList]": ()=>[
+                {
+                    id: 1001,
+                    type: "grid-images",
+                    images: [
+                        "/images/apex1.jpg",
+                        "/images/apex2.jpg",
+                        "/images/apex3.jpg",
+                        "/images/apex4.jpg"
+                    ],
+                    textContent: "Finally hit Diamond rank! The grind was real but totally worth it.",
+                    author: "Sarah",
+                    avatarUrl: "/images/sarah-avatar.jpg",
+                    date: new Date(),
+                    game: "Apex Legends",
+                    postTitle: "Diamond Rank Achievement",
+                    tags: [
+                        "ranked",
+                        "diamond",
+                        "achievement",
+                        "grind"
+                    ]
+                },
+                {
+                    id: 1002,
+                    type: "text",
+                    textContent: "Looking for a duo partner for ranked games. Must have good communication and be at least Platinum level.",
+                    author: "Mike",
+                    avatarUrl: "/images/mike-avatar.jpg",
+                    date: new Date(),
+                    game: "Valorant",
+                    postTitle: "LFG Ranked Partner",
+                    tags: [
+                        "lfg",
+                        "duo",
+                        "ranked",
+                        "platinum"
+                    ]
+                },
+                {
+                    id: 1003,
+                    type: "single-image",
+                    images: [
+                        "/images/bossfight.jpg"
+                    ],
+                    textContent: "After 50+ attempts, finally defeated this boss! The satisfaction is unreal.",
+                    author: "Alex",
+                    avatarUrl: "/images/alex-avatar.jpg",
+                    date: new Date(),
+                    game: "Elden Ring",
+                    postTitle: "Boss Victory",
+                    tags: [
+                        "boss",
+                        "victory",
+                        "challenge",
+                        "souls-like"
+                    ]
+                }
             ]
-        },
-        {
-            id: 1002,
-            type: "text",
-            textContent: "Looking for a duo partner for ranked games. Must have good communication and be at least Platinum level.",
-            author: "Mike",
-            avatarUrl: "/images/mike-avatar.jpg",
-            date: new Date(),
-            game: "Valorant",
-            postTitle: "LFG Ranked Partner",
-            tags: [
-                "lfg",
-                "duo",
-                "ranked",
-                "platinum"
-            ]
-        },
-        {
-            id: 1003,
-            type: "single-image",
-            images: [
-                "/images/bossfight.jpg"
-            ],
-            textContent: "After 50+ attempts, finally defeated this boss! The satisfaction is unreal.",
-            author: "Alex",
-            avatarUrl: "/images/alex-avatar.jpg",
-            date: new Date(),
-            game: "Elden Ring",
-            postTitle: "Boss Victory",
-            tags: [
-                "boss",
-                "victory",
-                "challenge",
-                "souls-like"
-            ]
+    }["Feed.useMemo[FeedCardList]"], []);
+    // Tag filtering functionality
+    const { selectedTags, isFiltering, toggleTag, clearTags, filterPosts } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$hooks$2f$useTagFilter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTagFilter"])();
+    // Get all available tags from posts
+    const availableTags = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Feed.useMemo[availableTags]": ()=>{
+            const allTags = FeedCardList.flatMap({
+                "Feed.useMemo[availableTags].allTags": (post)=>post.tags || []
+            }["Feed.useMemo[availableTags].allTags"]);
+            return [
+                ...new Set(allTags)
+            ].sort();
         }
-    ];
+    }["Feed.useMemo[availableTags]"], [
+        FeedCardList
+    ]);
+    // Filter posts based on selected tags
+    const filteredPosts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "Feed.useMemo[filteredPosts]": ()=>{
+            return filterPosts(FeedCardList);
+        }
+    }["Feed.useMemo[filteredPosts]"], [
+        filterPosts,
+        FeedCardList
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "gap-2 flex flex-col",
+        className: "space-y-4",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$AddPost$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/frontend/src/app/feed/page.tsx",
-                lineNumber: 51,
+                lineNumber: 74,
                 columnNumber: 13
             }, this),
-            FeedCardList.map((feedCard)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FeedCard"], {
-                    ...feedCard
-                }, feedCard.id, false, {
-                    fileName: "[project]/frontend/src/app/feed/page.tsx",
-                    lineNumber: 53,
-                    columnNumber: 17
-                }, this))
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "gap-2 flex flex-col",
+                children: [
+                    isFiltering && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-sm text-muted-foreground mb-2",
+                        children: [
+                            "Showing ",
+                            filteredPosts.length,
+                            " of ",
+                            FeedCardList.length,
+                            " posts"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/frontend/src/app/feed/page.tsx",
+                        lineNumber: 89,
+                        columnNumber: 21
+                    }, this),
+                    filteredPosts.map((feedCard)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FeedCard"], {
+                            ...feedCard
+                        }, feedCard.id, false, {
+                            fileName: "[project]/frontend/src/app/feed/page.tsx",
+                            lineNumber: 94,
+                            columnNumber: 21
+                        }, this)),
+                    filteredPosts.length === 0 && isFiltering && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center py-8 text-muted-foreground",
+                        children: "No posts found with the selected tags."
+                    }, void 0, false, {
+                        fileName: "[project]/frontend/src/app/feed/page.tsx",
+                        lineNumber: 100,
+                        columnNumber: 21
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/frontend/src/app/feed/page.tsx",
+                lineNumber: 87,
+                columnNumber: 13
+            }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/src/app/feed/page.tsx",
-        lineNumber: 50,
+        lineNumber: 73,
         columnNumber: 9
     }, this);
 };
+_s(Feed, "/jEmtyy+PdS87WIQ1cnZdAdD8/o=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$hooks$2f$useTagFilter$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTagFilter"]
+    ];
+});
 _c = Feed;
 const __TURBOPACK__default__export__ = Feed;
 var _c;
@@ -2267,4 +2959,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=frontend_src_c8603f6c._.js.map
+//# sourceMappingURL=frontend_src_ad30e827._.js.map
