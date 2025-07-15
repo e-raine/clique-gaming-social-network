@@ -13,36 +13,39 @@ const Feed = () => {
 					"/images/mob4.jpg",
 					// "/images/mob5.jpg",
 				]}
-				textContent="Survived the Ocean Monument, and here’s proof!"
+				textContent="Survived the Ocean Monument, and here's proof!"
 				author="Charles"
 				avatarUrl="/images/charles-avatar.jpg"
 				date={new Date()}
 				game="Minecraft"
 				postTitle="Ocean Raid Highlights"
+				tags={["#minecraft", "#ocean", "#monument", "#survival", "#victory"]}
 			/>
 
 			<FeedCard
 				type="text"
-				textContent="Survived the Ocean Monument, and here’s proof!"
+				textContent="Survived the Ocean Monument, and here's proof!"
 				author="Charles"
 				avatarUrl="/images/charles-avatar.jpg"
 				date={new Date()}
 				game="Minecraft"
 				postTitle="Ocean Raid Highlights"
+				tags={["#minecraft", "#story", "#adventure"]}
 			/>
 
 			<FeedCard
 				type="single-image"
 				images={["/images/mob1.jpg"]}
-				textContent="Survived the Ocean Monument, and here’s proof!"
+				textContent="Survived the Ocean Monument, and here's proof!"
 				author="Charles"
 				avatarUrl="/images/charles-avatar.jpg"
 				date={new Date()}
 				game="Minecraft"
 				postTitle="Ocean Raid Highlights"
+				tags={["#minecraft", "#screenshot", "#gaming", "#proud"]}
 			/>
 		</div>
   )
 }
 
-export default Feed
+export default Feed;
