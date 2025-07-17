@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Install Dependencies
         run: |
           echo "Running Install Dependencies..."
@@ -36,3 +36,12 @@ jobs:
           sleep 5s;
           echo "Running Security Checks... 3"
           sleep 5s;
+
+  deploy:
+    name: Deployment
+    runs-on: ubuntu-latest
+    needs: [lintTest, securityCheck] #if they have no errors, deploy will run
+    steps:
+    - name: Install Dependencies
+      run: |
+        echo "Deployment in Progress..."
