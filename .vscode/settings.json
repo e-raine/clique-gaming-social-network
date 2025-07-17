@@ -1,0 +1,7 @@
+{
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.activityBar.location": "default",
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 6
+}
