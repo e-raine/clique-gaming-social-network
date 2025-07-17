@@ -11,7 +11,7 @@ const SignInForm: React.FC<Props> = ({ switchForm }) => {
     <div className="form-box">
       <h2 className="form-title">Log in</h2>
       <p className="form-subtext">
-        Don't have an account? <button className="link" onClick={switchForm}>Sign up</button>
+        Don&apos;t have an account? <button className="link" onClick={switchForm}>Sign up</button>
       </p>
       <div className="input-box">
         <p className="form-subtext">Email</p>
