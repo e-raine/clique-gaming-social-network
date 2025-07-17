@@ -1,8 +1,10 @@
+import Image from 'next/image';
+
 export default function SidebarRight() {
   return (
     <div className="sidebar-right">
       <div className="bg-[#16161B] p-4 rounded-lg">
-        <img src="/banner.jpg" className="w-full rounded" />
+        <Image src="/banner.jpg" className="w-full rounded" alt="banner"/>
         <div className="mt-3">
           <p className="font-semibold">Krameas Aqua</p>
           <p className="text-sm text-gray-400">@krrameas</p>
