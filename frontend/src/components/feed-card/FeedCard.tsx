@@ -3,7 +3,6 @@ import { useMemo, useState } from "react";
 import { FeedCardFooter } from "./FeedCardFooter";
 import FeedCardInner from "./FeedCardInner";
 
-// This is the main file for the FeedCard
 
 export type FeedCardProps = {
 	id: number;
@@ -33,7 +32,7 @@ export function FeedCard({
 	date,
 	game,
 	postTitle,
-	likeCount: initialLikeCount = 10,
+	likeCount: initialLikeCount = 0,
 }: FeedCardProps) {
 	//Liking Posts
 	const [likeCount, setLikeCount] = useState(initialLikeCount);

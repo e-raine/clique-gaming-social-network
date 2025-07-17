@@ -1927,10 +1927,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$u
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/button.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2d$vertical$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreVertical$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/ellipsis-vertical.js [app-ssr] (ecmascript) <export default as MoreVertical>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/square-pen.js [app-ssr] (ecmascript) <export default as Edit>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flag$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flag$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/flag.js [app-ssr] (ecmascript) <export default as Flag>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Share$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/share.js [app-ssr] (ecmascript) <export default as Share>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bookmark$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bookmark$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/bookmark.js [app-ssr] (ecmascript) <export default as Bookmark>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$minus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__UserMinus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user-minus.js [app-ssr] (ecmascript) <export default as UserMinus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardContent$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/FeedCardContent.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/ui/dropdown-menu.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$EditPost$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/post-actions/EditPost.tsx [app-ssr] (ecmascript)");
@@ -1979,21 +1975,21 @@ const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                                                 alt: author
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 67,
-                                                columnNumber: 29
+                                                lineNumber: 75,
+                                                columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$avatar$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AvatarFallback"], {
                                                 children: author?.[0]?.toUpperCase() || "?"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 68,
-                                                columnNumber: 29
+                                                lineNumber: 76,
+                                                columnNumber: 9
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                        lineNumber: 66,
-                                        columnNumber: 25
+                                        lineNumber: 74,
+                                        columnNumber: 8
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
@@ -2002,41 +1998,41 @@ const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                                                 children: author
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 71,
-                                                columnNumber: 29
+                                                lineNumber: 81,
+                                                columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$separator$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Separator"], {}, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 72,
-                                                columnNumber: 29
+                                                lineNumber: 82,
+                                                columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-sm text-muted-foreground",
                                                 children: date.toLocaleDateString()
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 73,
-                                                columnNumber: 29
+                                                lineNumber: 83,
+                                                columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-sm text-muted-foreground leading-3",
                                                 children: game
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 76,
-                                                columnNumber: 29
+                                                lineNumber: 86,
+                                                columnNumber: 9
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                        lineNumber: 70,
-                                        columnNumber: 25
+                                        lineNumber: 80,
+                                        columnNumber: 8
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                lineNumber: 65,
-                                columnNumber: 21
+                                lineNumber: 73,
+                                columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "right-section flex gap-2",
@@ -2046,8 +2042,8 @@ const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                                         children: "Follow"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                        lineNumber: 82,
-                                        columnNumber: 25
+                                        lineNumber: 94,
+                                        columnNumber: 8
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenu"], {
                                         children: [
@@ -2061,148 +2057,75 @@ const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 86,
-                                                        columnNumber: 37
+                                                        lineNumber: 98,
+                                                        columnNumber: 11
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                    lineNumber: 85,
-                                                    columnNumber: 33
+                                                    lineNumber: 97,
+                                                    columnNumber: 10
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 84,
-                                                columnNumber: 29
+                                                lineNumber: 96,
+                                                columnNumber: 9
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
                                                 align: "end",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$EditPost$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                        post: currentPost,
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
-                                                            onSelect: (e)=>e.preventDefault(),
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__["Edit"], {
-                                                                    className: "mr-2 h-4 w-4"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                                    lineNumber: 92,
-                                                                    columnNumber: 41
-                                                                }, this),
-                                                                "Edit Post"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                            lineNumber: 91,
-                                                            columnNumber: 37
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 90,
-                                                        columnNumber: 33
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$post$2d$actions$2f$EditPost$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                    post: currentPost,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                        onSelect: (e)=>e.preventDefault(),
                                                         children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Share$3e$__["Share"], {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2d$pen$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Edit$3e$__["Edit"], {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                                lineNumber: 97,
-                                                                columnNumber: 37
+                                                                lineNumber: 104,
+                                                                columnNumber: 12
                                                             }, this),
-                                                            "Share Post"
+                                                            "Edit Post"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 96,
-                                                        columnNumber: 33
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bookmark$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Bookmark$3e$__["Bookmark"], {
-                                                                className: "mr-2 h-4 w-4"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                                lineNumber: 101,
-                                                                columnNumber: 37
-                                                            }, this),
-                                                            "Save Post"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 100,
-                                                        columnNumber: 33
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {}, void 0, false, {
-                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 104,
-                                                        columnNumber: 33
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$minus$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__UserMinus$3e$__["UserMinus"], {
-                                                                className: "mr-2 h-4 w-4"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                                lineNumber: 106,
-                                                                columnNumber: 37
-                                                            }, this),
-                                                            "Unfollow ",
-                                                            author
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 105,
-                                                        columnNumber: 33
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
-                                                        className: "text-red-600",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$flag$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flag$3e$__["Flag"], {
-                                                                className: "mr-2 h-4 w-4"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                                lineNumber: 110,
-                                                                columnNumber: 37
-                                                            }, this),
-                                                            "Report Post"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                        lineNumber: 109,
-                                                        columnNumber: 33
+                                                        lineNumber: 103,
+                                                        columnNumber: 11
                                                     }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                }, void 0, false, {
+                                                    fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
+                                                    lineNumber: 102,
+                                                    columnNumber: 10
+                                                }, this)
+                                            }, void 0, false, {
                                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                                lineNumber: 89,
-                                                columnNumber: 29
+                                                lineNumber: 101,
+                                                columnNumber: 9
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 25
+                                        lineNumber: 95,
+                                        columnNumber: 8
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                                lineNumber: 81,
-                                columnNumber: 21
+                                lineNumber: 93,
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                        lineNumber: 63,
-                        columnNumber: 17
+                        lineNumber: 71,
+                        columnNumber: 6
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
                         className: "mt-3 text-lg font-semibold text-left",
                         children: postTitle
                     }, void 0, false, {
                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                        lineNumber: 119,
-                        columnNumber: 5
+                        lineNumber: 131,
+                        columnNumber: 6
                     }, this),
                     tags && tags.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mt-2",
@@ -2217,19 +2140,19 @@ const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                             }
                         }, void 0, false, {
                             fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                            lineNumber: 124,
-                            columnNumber: 25
+                            lineNumber: 138,
+                            columnNumber: 8
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                        lineNumber: 123,
-                        columnNumber: 21
+                        lineNumber: 137,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                lineNumber: 62,
-                columnNumber: 13
+                lineNumber: 70,
+                columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardContent$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FeedCardContent"], {
@@ -2238,18 +2161,18 @@ const FeedCardInner = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5
                     textContent: textContent
                 }, void 0, false, {
                     fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                    lineNumber: 139,
-                    columnNumber: 17
+                    lineNumber: 153,
+                    columnNumber: 6
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/frontend/src/components/feed-card/FeedCardInner.tsx",
-                lineNumber: 138,
-                columnNumber: 13
+                lineNumber: 152,
+                columnNumber: 5
             }, this)
         ]
     }, void 0, true);
 });
-FeedCardInner.displayName = 'FeedCardInner';
+FeedCardInner.displayName = "FeedCardInner";
 const __TURBOPACK__default__export__ = FeedCardInner;
 }}),
 "[project]/frontend/src/components/feed-card/FeedCard.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
@@ -2270,7 +2193,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$component
 ;
 ;
 ;
-function FeedCard({ id, type, images = [], textContent = "", author, avatarUrl, tags, date, game, postTitle, likeCount: initialLikeCount = 10 }) {
+function FeedCard({ id, type, images = [], textContent = "", author, avatarUrl, tags, date, game, postTitle, likeCount: initialLikeCount = 0 }) {
     //Liking Posts
     const [likeCount, setLikeCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(initialLikeCount);
     const [liked, setLiked] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -2297,7 +2220,7 @@ function FeedCard({ id, type, images = [], textContent = "", author, avatarUrl, 
             textContent: textContent
         }, void 0, false, {
             fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-            lineNumber: 55,
+            lineNumber: 54,
             columnNumber: 4
         }, this), [
         id,
@@ -2319,7 +2242,7 @@ function FeedCard({ id, type, images = [], textContent = "", author, avatarUrl, 
                 children: cardInnerContent
             }, void 0, false, {
                 fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-                lineNumber: 74,
+                lineNumber: 73,
                 columnNumber: 4
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCardFooter$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FeedCardFooter"], {
@@ -2332,109 +2255,26 @@ function FeedCard({ id, type, images = [], textContent = "", author, avatarUrl, 
                 author: author
             }, void 0, false, {
                 fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-                lineNumber: 77,
+                lineNumber: 76,
                 columnNumber: 4
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/frontend/src/components/feed-card/FeedCard.tsx",
-        lineNumber: 73,
+        lineNumber: 72,
         columnNumber: 3
     }, this);
 }
 }}),
-"[project]/frontend/src/app/feed/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+"[project]/frontend/src/app/feed/page.tsx [app-ssr] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname } = __turbopack_context__;
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/components/feed-card/FeedCard.tsx [app-ssr] (ecmascript)");
-'use client';
-;
-;
-const Feed = ()=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "gap-2 flex flex-col",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FeedCard"], {
-                type: "grid-images",
-                images: [
-                    "/images/mob1.jpg",
-                    "/images/mob2.jpg",
-                    "/images/mob3.jpg",
-                    "/images/mob4.jpg"
-                ],
-                textContent: "Survived the Ocean Monument, and here's proof!",
-                author: "Charles",
-                avatarUrl: "/images/charles-avatar.jpg",
-                date: new Date(),
-                game: "Minecraft",
-                postTitle: "Ocean Raid Highlights",
-                tags: [
-                    "#minecraft",
-                    "#ocean",
-                    "#monument",
-                    "#survival",
-                    "#victory"
-                ]
-            }, void 0, false, {
-                fileName: "[project]/frontend/src/app/feed/page.tsx",
-                lineNumber: 7,
-                columnNumber: 4
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FeedCard"], {
-                type: "text",
-                textContent: "Survived the Ocean Monument, and here's proof!",
-                author: "Charles",
-                avatarUrl: "/images/charles-avatar.jpg",
-                date: new Date(),
-                game: "Minecraft",
-                postTitle: "Ocean Raid Highlights",
-                tags: [
-                    "#minecraft",
-                    "#story",
-                    "#adventure"
-                ]
-            }, void 0, false, {
-                fileName: "[project]/frontend/src/app/feed/page.tsx",
-                lineNumber: 25,
-                columnNumber: 4
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$components$2f$feed$2d$card$2f$FeedCard$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FeedCard"], {
-                type: "single-image",
-                images: [
-                    "/images/mob1.jpg"
-                ],
-                textContent: "Survived the Ocean Monument, and here's proof!",
-                author: "Charles",
-                avatarUrl: "/images/charles-avatar.jpg",
-                date: new Date(),
-                game: "Minecraft",
-                postTitle: "Ocean Raid Highlights",
-                tags: [
-                    "#minecraft",
-                    "#screenshot",
-                    "#gaming",
-                    "#proud"
-                ]
-            }, void 0, false, {
-                fileName: "[project]/frontend/src/app/feed/page.tsx",
-                lineNumber: 36,
-                columnNumber: 4
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/frontend/src/app/feed/page.tsx",
-        lineNumber: 6,
-        columnNumber: 5
-    }, this);
-};
-const __TURBOPACK__default__export__ = Feed;
-}}),
+const e = new Error(`Could not parse module '[project]/frontend/src/app/feed/page.tsx'
+
+Unexpected token `div`. Expected jsx identifier`);
+e.code = 'MODULE_UNPARSEABLE';
+throw e;}}),
 
 };
 
