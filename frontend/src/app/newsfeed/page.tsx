@@ -3,6 +3,8 @@ import SidebarRight from "@/components/newsfeed/SidebarRight";
 import FeedTabs from "@/components/newsfeed/FeedTabs";
 import PostCard from "@/components/newsfeed/PostCard";
 
+import Image from 'next/image'
+
 import "@/components/newsfeed/newsfeed.css";
 
 export default function Newsfeed() {
@@ -11,7 +13,7 @@ export default function Newsfeed() {
       <SidebarLeft />
       <main className="newsfeed-main">
         <div className="newsfeed-header">
-          <img src="/logo.png" className="logo-icon" />
+          <Image src="/logo.png" className="logo-icon" alt=""/>
           <input className="search-input" placeholder="Search here..." />
           <button className="search-btn">🔍</button>
         </div>
