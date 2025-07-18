@@ -1,3 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 :root {
   --cprimary: #f208ff;
   --cbackground: #0b0b0d;
@@ -15,6 +31,10 @@ body {
 
 .newsfeed-container {
   display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Optional: spacing between items */
+  width: 100%;
+  box-sizing: border-box;
   min-height: 100vh;
 }
 
@@ -33,13 +53,22 @@ body {
 }
 
 .logo-icon {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: var(--ccard);
+  border-radius: 10px;
 }
 
 .search-input {
-  flex: 1;
-  padding: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1.4rem; /* space for icon on the right */
   border-radius: 8px;
   border: none;
   background: var(--ccard);
@@ -50,10 +79,17 @@ body {
   color: var(--ctext-muted);
 }
 
+.search-input:focus{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 .search-btn {
   background: var(--cprimary);
   border: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin:0.5rem;
   border-radius: 6px;
   cursor: pointer;
   color: white;
@@ -85,10 +121,21 @@ body {
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 9999px; /* makes it fully rounded */
+  overflow: hidden;
+  cursor: pointer;
 }
+
+.avatar img,
+.avatar [data-radix-avatar-image] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
 
 .username {
   font-weight: bold;
@@ -117,13 +164,40 @@ body {
 }
 
 .sidebar-left {
-  width: 60px;
-  background: var(--cbackground);
+  width: 70px;
+  background: var(--ccard);
   border-right: 1px solid #1f1f1f;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0; /* distance from top when sticking */
+  height: 100vh; /* only take up as much space as needed */
+
+  padding: 1rem;
+  gap: 1rem;
 }
+
+.logo{
+  margin-top: auto; 
+}
+
+.button{
+  background-color: var(--ccard-foreground);
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--cforeground);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover{
+  background-color: var(--cprimary); /* Brighter or accent color on hover */
+  color: var(--csecondary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 .sidebar-right {
   width: 300px;
