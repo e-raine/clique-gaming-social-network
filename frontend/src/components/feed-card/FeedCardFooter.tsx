@@ -41,7 +41,7 @@ export const FeedCardFooter = React.memo<FeedCardFooterProps>(({
 					<span>{likeCount}</span>
 				</button>
 				{/* Comment Button */}
-				<Commenting
+				{/* <Commenting
 					trigger={
 						<button
 							className="flex items-center gap-1 hover:text-primary transition"
@@ -73,7 +73,7 @@ export const FeedCardFooter = React.memo<FeedCardFooterProps>(({
 					likeCount={likeCount}
 					liked={liked}
 					onLike={handleLike}
-				/>
+				/> */}
 			</div>
 		</CardFooter>
 	);

@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 import { Edit, Plus, X } from "lucide-react";
 import Image from "next/image";
-import { editPostAtom, editPostDialogAtom, editPostErrorAtom } from "./postAtoms";
 
 /**
  * EditPost Component
@@ -23,12 +22,14 @@ import { editPostAtom, editPostDialogAtom, editPostErrorAtom } from "./postAtoms
  */
 
 //Jotai Atoms for global state management
-
+export const editPostAtom = atom<FeedCardProps | null>(null);
+export const editPostDialogAtom = atom<boolean>(false);
+export const editPostErrorAtom = atom<string | null>(null);
 
 /**
  * Props interface for the EditPost component
  */
-type EditPostDialogProps = {
+interface EditPostDialogProps {
     post: FeedCardProps;
     children?: React.ReactNode;
 }

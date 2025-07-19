@@ -1,10 +1,12 @@
-import { useAtom } from "jotai";
+import { useAtom, useSetAtom } from "jotai";
 import React from "react";
 import {
 	createPostAtom,
 	createPostDialogAtom,
 	createPostErrorAtom,
+	createPostImagePreviewsAtom,
 	createPostLoadingAtom,
+	createPostSelectedImagesAtom,
 } from "./postAtoms";
 import { FeedCardProps } from "../FeedCard";
 import {
@@ -12,11 +14,11 @@ import {
 	DialogContent,
 	DialogTrigger,
 	DialogTitle,
-	DialogHeader,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Plus } from "lucide-react";
+import { Plus, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import Image from "next/image";
 
 type CreatePostProps = {
 	children?: React.ReactNode;
@@ -32,6 +34,11 @@ const CreatePost = ({ children, onPostAdded }: CreatePostProps) => {
 	//Form Data
 	const [formData, setFormData] = useAtom(createPostAtom);
 
+	//Local state for image handling
+	const setSelectedImages = useSetAtom(createPostSelectedImagesAtom);
+	const [imagePreviews, setImagePreviews] = useAtom(createPostImagePreviewsAtom);
+
+
 	const handleInputChange = (
 		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
 	) => {
@@ -41,45 +48,44 @@ const CreatePost = ({ children, onPostAdded }: CreatePostProps) => {
 		setFormData((prev) => ({
 			...prev,
 			[name]: value,
-            
-		}));
-	};
-
-	const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const files = Array.from(e.target.files || []);
-
-		setFormData((prev) => ({
-			...prev,
-			images: files,
 		}));
 	};
 
 	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
 
-		const checkType = ({ formData }) => {
-			if (formData.images.length === 1) {
-				return "single-image";
-			} else if (formData.images.length > 1) {
-				return "multiple-images";
-			} else return "text";
-		};
-
 		try {
 			setIsLoading(true);
 			setError(null); //Clear any exisiting errors
 
+			
+			if (!formData.postTitle.trim()){
+				throw new Error("Post title is required");
+			} 
+
+			if (!formData.textContent.trim() && formData.images.length === 0){
+				throw new Error("Please add an image or add text to share");
+			}
+
 			const newPost: FeedCardProps = {
 				id: Date.now(),
-				type: checkType({ formData }),
+				type: // Check if type has image/s if not return text
+					formData.images.length === 1
+						? "single-image"
+						: formData.images.length > 1
+						? "multiple-images"
+						: "text",
 				images:
 					formData.images.length > 0
-						? [URL.createObjectURL(formData.images[0])]
+						? formData.images.map((img) => URL.createObjectURL(img))
 						: [],
 				textContent: formData.textContent,
 				author: "current user", //TO DO: Implement user here,
-				avatarUrl: "", //Replace with actual url,
-				tags: formData.tags.split(" ").filter((tag) => tag.trim() !== ""),
+				avatarUrl: "user URL", //Replace with actual url,
+				tags: formData.tags
+					.split(" ")
+					.map((tag) => tag.trim())
+					.filter((tag) => tag !== ""),
 				date: new Date(),
 				game: formData.game,
 				postTitle: formData.postTitle,
@@ -109,12 +115,41 @@ const CreatePost = ({ children, onPostAdded }: CreatePostProps) => {
 				onPostAdded(newPost);
 			}
 		} catch (error) {
-			setError("Error creating post");
+			const errorMessage =
+				error instanceof Error ? error.message : "Error creating post";
+			setError(errorMessage);
 			console.log("Error creating post: ", error);
 		} finally {
 			setIsLoading(false);
+			
 		}
 	};
+
+	const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const files = Array.from(e.target.files || []);
+		setFormData((prev) => ({
+			...prev,
+			images: files,
+		}));
+
+		if (files.length > 0){
+			setSelectedImages(prev => [...prev, ...files]);
+			files.forEach(file => {
+				const reader = new FileReader();
+				reader.onload = (e) => {
+					const result = e.target?.result as string;
+					setImagePreviews(prev =>[...prev, result]);
+				}
+				reader.readAsDataURL(file);
+			});
+		};
+		
+	};
+
+	const removeImage = (index:number) => {
+		setSelectedImages(prev => prev.filter((_, i) => i !== index));
+		setImagePreviews(prev => prev.filter((_, i) => i !== index));
+	}
 
 	return (
 		<Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -143,7 +178,7 @@ const CreatePost = ({ children, onPostAdded }: CreatePostProps) => {
 								<Button
 									type="submit"
 									disabled={
-										isLoading || !formData.postTitle || !formData.textContent
+										isLoading || !formData.postTitle.trim()
 									}
 								>
 									{isLoading ? "Creating..." : "Create Post"}
@@ -169,7 +204,6 @@ const CreatePost = ({ children, onPostAdded }: CreatePostProps) => {
 								onChange={handleInputChange}
 								placeholder="Share your clips, wins, or ask the community..."
 								rows={4}
-								required
 							/>
 
 							<Input
@@ -192,22 +226,54 @@ const CreatePost = ({ children, onPostAdded }: CreatePostProps) => {
 								placeholder="Add hashtags like #gaming #minecraft #victory"
 							/>
 
-							<Input
-								className="w-full h-[59px] p-5 border rounded-[10px]"
-								type="file"
-								id="images"
-								name="images"
-								accept="image/*"
-								multiple
-								onChange={handleFileChange}
-								placeholder="Upload images"
-							/>
+{/* Image Upload Section */}
+                                <div className="space-y-3">
+                                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                        {/* Add Images Button - Square upload area */}
+                                        <div className="relative">
+                                            <input
+                                                type="file"
+                                                id="images"
+                                                name="images"
+                                                accept="image/*"
+                                                multiple
+                                                onChange={handleImageChange}
+                                                className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                                                aria-label="Upload images"
+                                                title="Upload images"
+                                            />
+                                            <div className="w-full h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center hover:border-gray-400 transition-colors cursor-pointer">
+                                                <div className="flex flex-col items-center gap-1 text-muted-foreground">
+                                                    <Plus size={20} />
+                                                    <span className="text-xs">Add Images</span>
+                                                </div>
+                                            </div>
+                                        </div>
 
-							{formData.images.length > 0 && (
-								<div className="text-sm text-gray-600">
-									{formData.images.length} image(s) selected
-								</div>
-							)}
+                                        {/* Image Previews - Shows selected images with remove functionality */}
+                                        {imagePreviews.map((preview, index) => (
+                                            <div key={index} className="relative group">
+                                                <Image
+                                                    src={preview}
+                                                    alt={`Preview ${index + 1}`}
+                                                    width={200}
+                                                    height={96}
+                                                    className="w-full h-24 object-cover rounded-lg border"
+                                                />
+                                                {/* Remove button - appears on hover */}
+                                                <button
+                                                    type="button"
+                                                    onClick={() => removeImage(index)}
+                                                    className="absolute top-1 right-1 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                                                    aria-label={`Remove image ${index + 1}`}
+                                                    title={`Remove image ${index + 1}`}
+                                                >
+                                                    <X size={12} />
+                                                </button>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
 						</form>
 					</div>
 				</div>
