@@ -18,7 +18,7 @@ import { Card } from "../ui/card";
 
 type Comment = {
 	id: number;
-	user: {
+	user: { use
 		name: string;
 		avatarUrl?: string;
 	};

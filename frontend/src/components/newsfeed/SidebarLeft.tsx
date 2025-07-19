@@ -12,6 +12,7 @@ interface SidebarLeftProps {
 const SidebarLeft: React.FC<SidebarLeftProps> = ({ author, avatarUrl }) => {
   return (
     <div className="sidebar-left">
+
       <div className="avatar">
         <Avatar className="size-15">
           <AvatarImage src={avatarUrl || undefined} alt={author} />
@@ -28,6 +29,7 @@ const SidebarLeft: React.FC<SidebarLeftProps> = ({ author, avatarUrl }) => {
         <Mail />
       </button>
       <Image src="/images/icon2.png" className="logo" alt="logo" width={45} height={10}/>
+
     </div>
   );
 }
