@@ -1,7 +1,10 @@
+"use client";
+
 import SidebarLeft from "@/components/newsfeed/SidebarLeft";
 import SidebarRight from "@/components/newsfeed/SidebarRight";
 import FeedTabs from "@/components/newsfeed/FeedTabs";
 import PostCard from "@/components/newsfeed/PostCard";
+import Header from "@/components/newsfeed/Header";
 
 import Image from 'next/image'
 
@@ -10,14 +13,11 @@ import "@/components/newsfeed/newsfeed.css";
 export default function Newsfeed() {
   return (
     <div className="newsfeed-container">
-      <SidebarLeft />
+      <SidebarLeft author="username" avatarUrl="https://avatars.githubusercontent.com/u/176701797?v=4"/>
       <main className="newsfeed-main">
-        <div className="newsfeed-header">
-          <Image src="/logo.png" className="logo-icon" alt="" width={400}
-						height={400}/>
-          <input className="search-input" placeholder="Search here..." />
-          <button className="search-btn">🔍</button>
-        </div>
+
+        <Header />
+
         <FeedTabs />
         <div className="posts-container">
           <PostCard />
