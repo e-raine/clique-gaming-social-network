@@ -13,7 +13,8 @@ export default function Newsfeed() {
       <SidebarLeft />
       <main className="newsfeed-main">
         <div className="newsfeed-header">
-          <Image src="/logo.png" className="logo-icon" alt=""/>
+          <Image src="/logo.png" className="logo-icon" alt="" width={400}
+						height={400}/>
           <input className="search-input" placeholder="Search here..." />
           <button className="search-btn">🔍</button>
         </div>
