@@ -52,8 +52,8 @@ const SignInForm: React.FC<Props> = ({ switchForm }) => {
       <p className="form-subtext">
         Don't have an account? <button className="link" onClick={switchForm}>Sign up</button>
       </p>
-      <form onSubmit={onSubmit}>
-        <label>Email</label>
+      <form onSubmit={onSubmit} className="input-box">
+        <label className="form-subtext">Email</label>
         <input
           className="input"
           type="email"
@@ -62,7 +62,7 @@ const SignInForm: React.FC<Props> = ({ switchForm }) => {
           required
         />
 
-        <label>Password</label>
+        <label className="form-subtext">Password</label>
         <input
           className="input"
           type="password"

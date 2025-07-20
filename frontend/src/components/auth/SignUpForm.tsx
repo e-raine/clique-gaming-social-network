@@ -44,24 +44,31 @@ const SignUpForm: React.FC<Props> = ({ switchForm }) => {
         Already have an account?{' '}
         <button className="link" onClick={switchForm}>Log in</button>
       </p>
-      <form onSubmit={onSubmit}>
-        <label>First Name</label>
-        <input
-          className="input"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          required
-        />
+      <form onSubmit={onSubmit} className="input-box">
+        <div className="fullName">
+          <div className="fname">
+            <label className="form-subtext">First Name</label>
+            <input
+              className="input"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+            />
+          </div>
 
-        <label>Last Name</label>
-        <input
-          className="input"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          required
-        />
+          <div className="lname">
+            <label className="form-subtext">Last Name</label>
+            <input
+              className="input"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+            />
+          </div>
 
-        <label>Username</label>
+        </div>
+
+        <label className="form-subtext">Username</label>
         <input
           className="input"
           value={nickname}
@@ -69,7 +76,7 @@ const SignUpForm: React.FC<Props> = ({ switchForm }) => {
           required
         />
 
-        <label>Email Address</label>
+        <label className="form-subtext">Email Address</label>
         <input
           className="input"
           type="email"
@@ -78,7 +85,7 @@ const SignUpForm: React.FC<Props> = ({ switchForm }) => {
           required
         />
 
-        <label>Password</label>
+        <label className="form-subtext">Password</label>
         <input
           className="input"
           type="password"
