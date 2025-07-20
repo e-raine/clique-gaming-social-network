@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
 import AuthPage from '@/components/auth/AuthPage';
 
-export default function SignupPage() {
+export default function LoginRegisterPage() {
   return <AuthPage />;
 }

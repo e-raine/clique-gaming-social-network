@@ -42,7 +42,7 @@ const SignUpForm: React.FC<Props> = ({ switchForm }) => {
       <h2 className="form-title">Create an account</h2>
       <p className="form-subtext">
         Already have an account?{' '}
-        <button className="link" onClick={switchForm}>Log in</button>
+        <a className="link" onClick={switchForm}>Log in</a>
       </p>
       <form onSubmit={onSubmit} className="input-box">
         <div className="fullName">
