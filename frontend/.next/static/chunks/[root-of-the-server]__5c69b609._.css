@@ -755,10 +755,6 @@
     flex: 1;
   }
 
-  .flex-1\/2 {
-    flex: 50%;
-  }
-
   .flex-shrink-0, .shrink-0 {
     flex-shrink: 0;
   }
@@ -819,10 +815,6 @@
 
   .flex-col-reverse {
     flex-direction: column-reverse;
-  }
-
-  .flex-row {
-    flex-direction: row;
   }
 
   .flex-wrap {
@@ -1195,10 +1187,6 @@
 
   .text-left {
     text-align: left;
-  }
-
-  .align-middle {
-    vertical-align: middle;
   }
 
   .font-\[family-name\:var\(--font-geist-mono\)\] {
