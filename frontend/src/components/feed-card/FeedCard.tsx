@@ -1,8 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { FeedCardFooter } from "./FeedCardFooter";
 import FeedCardInner from "./FeedCardInner";
-
+import { PostGlobalContext } from "./PostGlobalContext";
 
 export type FeedCardProps = {
 	id: number;
@@ -37,7 +37,8 @@ export function FeedCard({
 	//Liking Posts
 	const [likeCount, setLikeCount] = useState(initialLikeCount);
 	const [liked, setLiked] = useState(false);
-	const handleLike = () => {
+
+	const onLike = () => {
 		if (liked) {
 			setLikeCount(likeCount - 1);
 		} else {
@@ -49,39 +50,48 @@ export function FeedCard({
 	//Commenting
 	const commentCount = 0; // TODO: Replace with real comment count if available
 
-	const cardInnerContent = useMemo(
-		() => (
-			<FeedCardInner
-				id = {id}
-				author={author}
-				avatarUrl={avatarUrl}
-				tags={tags}
-				date={date}
-				game={game}
-				postTitle={postTitle}
-				type={type as "single-image" | "grid-images" | "text"}
-				images={images}
-				textContent={textContent}
-			/>
-		),
-		[id, author, avatarUrl, tags, date, game, postTitle, type, images, textContent]
-	);
-
+	// const cardInnerContent = useMemo(
+	// 	() => (
+	// 		<FeedCardInner
+	// 			id = {id}
+	// 			author={author}
+	// 			avatarUrl={avatarUrl}
+	// 			tags={tags}
+	// 			date={date}
+	// 			game={game}
+	// 			postTitle={postTitle}
+	// 			type={type as "single-image" | "grid-images" | "text"}
+	// 			images={images}
+	// 			textContent={textContent}
+	// 		/>
+	// 	),
+	// 	[id, author, avatarUrl, tags, date, game, postTitle, type, images, textContent]
+	// );
 
 	return (
-		<Card className="w-full min-w-[300px] sm:min-w-[500px] md:min-w-[600px]">
-			<div className="relative">
-				{cardInnerContent}
-			</div>
-			<FeedCardFooter
-				likeCount={likeCount}
-				liked={liked}
-				handleLike={handleLike}
-				commentCount={commentCount}
-				commentButtonDisabled={false}
-				cardInnerContent={cardInnerContent}
-				author={author}
-			/>
-		</Card>
+		//Create Provider to prevent prop drilling
+		<PostGlobalContext.Provider
+			value={{
+				id,
+				type,
+				images,
+				textContent,
+				author,
+				avatarUrl,
+				tags,
+				date,
+				game,
+				postTitle,
+				likeCount,
+				commentCount,
+				onLike,
+				liked,
+			}}
+		>
+			<Card className="w-full min-w-[300px] sm:min-w-[500px] md:min-w-[600px]">
+				<FeedCardInner />
+				<FeedCardFooter />
+			</Card>
+		</PostGlobalContext.Provider>
 	);
 }
