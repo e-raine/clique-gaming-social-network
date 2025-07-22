@@ -11,21 +11,21 @@
  */
 
 import Image from "next/image";
+import { useContext } from "react";
+import { PostGlobalContext } from "./PostGlobalContext";
 
-type FeedCardContentProps = {
-	type: "single-image" | "grid-images" | "text";
-	images?: string[];
-	textContent?: string;
-};
 
-export function FeedCardContent({
-	type,
-	images = [],
-	textContent = "",
-}: FeedCardContentProps) {
+export function FeedCardContent() {
+
+	const context = useContext(PostGlobalContext);
+	if (!context){
+		throw new Error("FeedCardContent must me inside PostGlobalCOntext.Provider!");
+	}
+	const {type, images, textContent} = context;
+
 	if (type === "single-image") {
 		//if type is just a single image
-		if (!images[0]) {
+		if (!images?.[0]) {
 			return null;
 		}
 		return (
@@ -43,7 +43,8 @@ export function FeedCardContent({
 		// if type is multiple images
 		return (
 			<div className="grid grid-cols-2 gap-2">
-				{images.slice(0, 4).map((img, i) => (
+				{/* nullish coalescing (?? 0) provides fallback when left side of the argument is null or undefined */}
+				{(images ?? []).slice(0, 4).map((img, i) => (
 					<Image
 						width={400}
 						height={400}
@@ -53,9 +54,9 @@ export function FeedCardContent({
 						className="w-full aspect-square object-cover flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground"
 					/>
 				))}
-				{images.length > 4 && (
+				{(images?.length ?? 0) > 4 && (
 					<div className="w-full aspect-square flex items-center justify-center rounded-md bg-muted text-sm text-muted-foreground">
-						+{images.length - 3} more
+						+{(images?.length ?? 0) - 3} more
 					</div>
 				)}
 			</div>

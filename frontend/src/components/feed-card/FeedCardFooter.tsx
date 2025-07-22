@@ -1,36 +1,26 @@
 
-import React from "react";
+import React, { useContext } from "react";
 import { CardFooter } from "../ui/card";
-import { Heart, MessageCircle } from "lucide-react";
-import Commenting from "./Commenting";
+import { Heart, /*MessageCircle */} from "lucide-react";
+// import Commenting from "./Commenting";
+import { PostGlobalContext } from "./PostGlobalContext";
 
 
-interface FeedCardFooterProps {
-	likeCount: number;
-	liked: boolean;
-	handleLike: () => void;
-	commentCount: number;
-	commentButtonDisabled: boolean;
-	cardInnerContent: React.ReactNode;
-	author: string;
-}
+export const FeedCardFooter = React.memo(() => {
+	const context = useContext(PostGlobalContext);
+	if (!context){
+		throw new Error("FeedCardFooter must be inside PostGlobalContext.Provider!");
+	}
 
-export const FeedCardFooter = React.memo<FeedCardFooterProps>(({
-	likeCount,
-	liked,
-	handleLike,
-	commentCount,
-	commentButtonDisabled,
-	cardInnerContent,
-	author,
-}) => {
+	const {likeCount, onLike, liked} = context;
+
 	return (
 		<CardFooter className="flex justify-between items-center px-6 py-2 text-sm text-muted-foreground">
 			<div className="flex items-center gap-4 ">
 				{/* Like Button */}
 				<button
 					className="flex items-center gap-1 hover:text-primary transition"
-					onClick={handleLike}
+					onClick={onLike}
 					aria-label={liked ? "Unlike" : "Like"}
 				>
 					{liked ? (
@@ -43,21 +33,21 @@ export const FeedCardFooter = React.memo<FeedCardFooterProps>(({
 				{/* Comment Button */}
 				{/* <Commenting
 					trigger={
-						<button
+						<onLike
 							className="flex items-center gap-1 hover:text-primary transition"
 							aria-label="Comment"
 							disabled={commentButtonDisabled}
 						>
 							<MessageCircle className="h-6 w-6" />
 							<span>{commentCount}</span>
-						</button>
+						</onLike>
 					}
 					cardInner={cardInnerContent}
 					cardFooter={
 						<div className="flex items-center gap-4 px-6 py-2">
 							<button
 								className="flex items-center gap-1 hover:text-primary transition"
-								onClick={handleLike}
+								onClick={onLike}
 								aria-label={liked ? "Unlike" : "Like"}
 							>
 								{liked ? (
