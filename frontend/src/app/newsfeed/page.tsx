@@ -1,10 +1,8 @@
 "use client";
 
 import SidebarLeft from "@/components/newsfeed/SidebarLeft";
-import SidebarRight from "@/components/newsfeed/SidebarRight";
-import FeedTabs from "@/components/newsfeed/FeedTabs";
-import PostCard from "@/components/newsfeed/PostCard";
 import Header from "@/components/newsfeed/Header";
+import MainFeed from "@/components/newsfeed/MainFeed";
 
 import Image from 'next/image'
 
@@ -17,14 +15,9 @@ export default function Newsfeed() {
       <main className="newsfeed-main">
 
         <Header />
-
-        <FeedTabs />
-        <div className="posts-container">
-          <PostCard />
-          <PostCard />
-        </div>
+        <MainFeed />
       </main>
-      <SidebarRight />
+      
     </div>
   );
 }
