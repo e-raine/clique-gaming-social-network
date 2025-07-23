@@ -40,7 +40,7 @@ body {
 
 .newsfeed-main {
   flex: 1;
-  max-width: 600px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -95,30 +95,6 @@ body {
   color: white;
 }
 
-.posts-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-
-.post-card {
-  background: var(--ccard);
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-.post-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.user-info {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-}
 
 .avatar {
   width: 45px;
@@ -134,33 +110,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 9999px;
-}
-
-
-.username {
-  font-weight: bold;
-}
-
-.timestamp {
-  font-size: 0.75rem;
-  color: var(--ctext-muted);
-}
-
-.post-caption {
-  margin: 1rem 0 0.5rem;
-}
-
-.post-image {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.post-footer {
-  margin-top: 0.75rem;
-  color: var(--ctext-muted);
-  font-size: 0.9rem;
-  display: flex;
-  gap: 1.5rem;
 }
 
 .sidebar-left {
@@ -211,4 +160,37 @@ body {
   .sidebar-right {
     display: block;
   }
+}
+
+
+.feed-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.posts-container{
+  background: var(--ccard);
+  height: auto;
+  width: 70%;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.others-container{
+  height: auto;
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* spacing between cards */
+}
+
+.controls,
+.friends-suggestions {
+  background: var(--ccard);
+  height: 100px; /* or any visible height */
+  width: auto;   /* add width so it's visible in row */
+  border-radius: 8px;
 }
