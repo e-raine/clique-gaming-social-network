@@ -178,6 +178,23 @@ body {
   padding: 1rem;
 }
 
+.posts-container hr{
+  flex-grow: 1;
+  height: 2px;
+  border: none;
+  background-color: var(--ccard-foreground);
+  margin: 10px 0 15px 0;
+}
+
+.navbar a{
+  padding: 10px;
+  color: var(--ctext-muted);
+}
+
+.navbar a:active{
+  color: var(--cprimary);
+}
+
 .others-container{
   height: auto;
   width: 30%;
